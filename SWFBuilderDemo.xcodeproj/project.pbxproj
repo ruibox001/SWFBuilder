@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		347E7C5C202194E700712875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C5B202194E700712875 /* AppDelegate.swift */; };
+		347E7C5E202194E700712875 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C5D202194E700712875 /* ViewController.swift */; };
+		347E7C61202194E700712875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347E7C5F202194E700712875 /* Main.storyboard */; };
+		347E7C63202194E700712875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 347E7C62202194E700712875 /* Assets.xcassets */; };
+		347E7C66202194E700712875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347E7C64202194E700712875 /* LaunchScreen.storyboard */; };
+		347E7C71202194E700712875 /* SWFBuilderDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C70202194E700712875 /* SWFBuilderDemoTests.swift */; };
+		347E7C7C202194E700712875 /* SWFBuilderDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C7B202194E700712875 /* SWFBuilderDemoUITests.swift */; };
+		347E7CBB2021950B00712875 /* Data+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C8A2021950B00712875 /* Data+SWFBuilder.swift */; };
+		347E7CBC2021950B00712875 /* Date+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C8B2021950B00712875 /* Date+SWFBuilder.swift */; };
+		347E7CBD2021950B00712875 /* DateFormatter+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C8C2021950B00712875 /* DateFormatter+SWFBuilder.swift */; };
+		347E7CBE2021950B00712875 /* Dictionary+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C8D2021950B00712875 /* Dictionary+SWFBuilder.swift */; };
+		347E7CBF2021950B00712875 /* NSArray+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C8E2021950B00712875 /* NSArray+SWFBuilder.swift */; };
+		347E7CC02021950C00712875 /* NSAttributedString+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C8F2021950B00712875 /* NSAttributedString+SWFBuilder.swift */; };
+		347E7CC12021950C00712875 /* NSMutableArray+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C902021950B00712875 /* NSMutableArray+SWFBuilder.swift */; };
+		347E7CC22021950C00712875 /* NSMutableAttributedString+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C912021950B00712875 /* NSMutableAttributedString+SWFBuilder.swift */; };
+		347E7CC32021950C00712875 /* NSObject+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C922021950B00712875 /* NSObject+SWFBuilder.swift */; };
+		347E7CC42021950C00712875 /* SFAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C932021950B00712875 /* SFAlert.swift */; };
+		347E7CC52021950C00712875 /* SFConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C942021950B00712875 /* SFConfig.swift */; };
+		347E7CC62021950C00712875 /* SFDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C952021950B00712875 /* SFDefine.swift */; };
+		347E7CC72021950C00712875 /* SFFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C962021950B00712875 /* SFFunc.swift */; };
+		347E7CC82021950C00712875 /* SFMake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C972021950B00712875 /* SFMake.swift */; };
+		347E7CC92021950C00712875 /* SFProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C982021950B00712875 /* SFProtocol.swift */; };
+		347E7CCA2021950C00712875 /* SFQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C992021950B00712875 /* SFQueue.swift */; };
+		347E7CCB2021950C00712875 /* SFUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C9A2021950B00712875 /* SFUtils.swift */; };
+		347E7CCC2021950C00712875 /* String+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C9B2021950B00712875 /* String+SWFBuilder.swift */; };
+		347E7CCD2021950C00712875 /* UIActivityIndicatorView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C9C2021950B00712875 /* UIActivityIndicatorView+SWFBuilder.swift */; };
+		347E7CCE2021950C00712875 /* UIApplication+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C9D2021950B00712875 /* UIApplication+SWFBuilder.swift */; };
+		347E7CCF2021950C00712875 /* UIButton+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C9E2021950B00712875 /* UIButton+SWFBuilder.swift */; };
+		347E7CD02021950C00712875 /* UICollectionView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C9F2021950B00712875 /* UICollectionView+SWFBuilder.swift */; };
+		347E7CD12021950C00712875 /* UICollectionViewCell+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CA02021950B00712875 /* UICollectionViewCell+SWFBuilder.swift */; };
+		347E7CD22021950C00712875 /* UICollectionViewFlowLayout+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CA12021950B00712875 /* UICollectionViewFlowLayout+SWFBuilder.swift */; };
+		347E7CD32021950C00712875 /* UICollectionViewLayout+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CA22021950B00712875 /* UICollectionViewLayout+SWFBuilder.swift */; };
+		347E7CD42021950C00712875 /* UIColor+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CA32021950B00712875 /* UIColor+SWFBuilder.swift */; };
+		347E7CD52021950C00712875 /* UIDatePicker+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CA42021950B00712875 /* UIDatePicker+SWFBuilder.swift */; };
+		347E7CD62021950C00712875 /* UIFont+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CA52021950B00712875 /* UIFont+SWFBuilder.swift */; };
+		347E7CD72021950C00712875 /* UIImage+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CA62021950B00712875 /* UIImage+SWFBuilder.swift */; };
+		347E7CD82021950C00712875 /* UIImageView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CA72021950B00712875 /* UIImageView+SWFBuilder.swift */; };
+		347E7CD92021950C00712875 /* UILabel+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CA82021950B00712875 /* UILabel+SWFBuilder.swift */; };
+		347E7CDA2021950C00712875 /* UINavigationControllor+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CA92021950B00712875 /* UINavigationControllor+SWFBuilder.swift */; };
+		347E7CDB2021950C00712875 /* UIPageControl+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CAA2021950B00712875 /* UIPageControl+SWFBuilder.swift */; };
+		347E7CDC2021950C00712875 /* UIPickerView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CAB2021950B00712875 /* UIPickerView+SWFBuilder.swift */; };
+		347E7CDD2021950C00712875 /* UIScrollView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CAC2021950B00712875 /* UIScrollView+SWFBuilder.swift */; };
+		347E7CDE2021950C00712875 /* UISearchBar+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CAD2021950B00712875 /* UISearchBar+SWFBuilder.swift */; };
+		347E7CDF2021950C00712875 /* UISegmentedControl+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CAE2021950B00712875 /* UISegmentedControl+SWFBuilder.swift */; };
+		347E7CE02021950C00712875 /* UISlider+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CAF2021950B00712875 /* UISlider+SWFBuilder.swift */; };
+		347E7CE12021950C00712875 /* UISwitch+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CB02021950B00712875 /* UISwitch+SWFBuilder.swift */; };
+		347E7CE22021950C00712875 /* UITableView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CB12021950B00712875 /* UITableView+SWFBuilder.swift */; };
+		347E7CE32021950C00712875 /* UITableViewCell+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CB22021950B00712875 /* UITableViewCell+SWFBuilder.swift */; };
+		347E7CE42021950C00712875 /* UITextField+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CB32021950B00712875 /* UITextField+SWFBuilder.swift */; };
+		347E7CE52021950C00712875 /* UITextView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CB42021950B00712875 /* UITextView+SWFBuilder.swift */; };
+		347E7CE62021950C00712875 /* UIView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CB52021950B00712875 /* UIView+SWFBuilder.swift */; };
+		347E7CE72021950C00712875 /* UIViewController+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CB62021950B00712875 /* UIViewController+SWFBuilder.swift */; };
+		347E7CE82021950C00712875 /* UIWebView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CB72021950B00712875 /* UIWebView+SWFBuilder.swift */; };
+		347E7CE92021950C00712875 /* UIWindow+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CB82021950B00712875 /* UIWindow+SWFBuilder.swift */; };
+		347E7CEA2021950C00712875 /* URL+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CB92021950B00712875 /* URL+SWFBuilder.swift */; };
+		347E7CEB2021950C00712875 /* WKWebView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CBA2021950B00712875 /* WKWebView+SWFBuilder.swift */; };
+		347E7CED20219DE100712875 /* NSMutableParagraphStyle+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CEC20219DE100712875 /* NSMutableParagraphStyle+SWFBuilder.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		347E7C6D202194E700712875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 347E7C50202194E700712875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 347E7C57202194E700712875;
+			remoteInfo = SWFBuilderDemo;
+		};
+		347E7C78202194E700712875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 347E7C50202194E700712875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 347E7C57202194E700712875;
+			remoteInfo = SWFBuilderDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		347E7C58202194E700712875 /* SWFBuilderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWFBuilderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		347E7C5B202194E700712875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		347E7C5D202194E700712875 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		347E7C60202194E700712875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		347E7C62202194E700712875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		347E7C65202194E700712875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		347E7C67202194E700712875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		347E7C6C202194E700712875 /* SWFBuilderDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWFBuilderDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		347E7C70202194E700712875 /* SWFBuilderDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFBuilderDemoTests.swift; sourceTree = "<group>"; };
+		347E7C72202194E700712875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		347E7C77202194E700712875 /* SWFBuilderDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWFBuilderDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		347E7C7B202194E700712875 /* SWFBuilderDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFBuilderDemoUITests.swift; sourceTree = "<group>"; };
+		347E7C7D202194E700712875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		347E7C8A2021950B00712875 /* Data+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7C8B2021950B00712875 /* Date+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7C8C2021950B00712875 /* DateFormatter+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7C8D2021950B00712875 /* Dictionary+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7C8E2021950B00712875 /* NSArray+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSArray+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7C8F2021950B00712875 /* NSAttributedString+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7C902021950B00712875 /* NSMutableArray+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableArray+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7C912021950B00712875 /* NSMutableAttributedString+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7C922021950B00712875 /* NSObject+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7C932021950B00712875 /* SFAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFAlert.swift; sourceTree = "<group>"; };
+		347E7C942021950B00712875 /* SFConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFConfig.swift; sourceTree = "<group>"; };
+		347E7C952021950B00712875 /* SFDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDefine.swift; sourceTree = "<group>"; };
+		347E7C962021950B00712875 /* SFFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFunc.swift; sourceTree = "<group>"; };
+		347E7C972021950B00712875 /* SFMake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFMake.swift; sourceTree = "<group>"; };
+		347E7C982021950B00712875 /* SFProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFProtocol.swift; sourceTree = "<group>"; };
+		347E7C992021950B00712875 /* SFQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFQueue.swift; sourceTree = "<group>"; };
+		347E7C9A2021950B00712875 /* SFUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFUtils.swift; sourceTree = "<group>"; };
+		347E7C9B2021950B00712875 /* String+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7C9C2021950B00712875 /* UIActivityIndicatorView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7C9D2021950B00712875 /* UIApplication+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7C9E2021950B00712875 /* UIButton+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7C9F2021950B00712875 /* UICollectionView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CA02021950B00712875 /* UICollectionViewCell+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CA12021950B00712875 /* UICollectionViewFlowLayout+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CA22021950B00712875 /* UICollectionViewLayout+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewLayout+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CA32021950B00712875 /* UIColor+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CA42021950B00712875 /* UIDatePicker+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDatePicker+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CA52021950B00712875 /* UIFont+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CA62021950B00712875 /* UIImage+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CA72021950B00712875 /* UIImageView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CA82021950B00712875 /* UILabel+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CA92021950B00712875 /* UINavigationControllor+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationControllor+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CAA2021950B00712875 /* UIPageControl+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPageControl+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CAB2021950B00712875 /* UIPickerView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPickerView+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CAC2021950B00712875 /* UIScrollView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CAD2021950B00712875 /* UISearchBar+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CAE2021950B00712875 /* UISegmentedControl+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CAF2021950B00712875 /* UISlider+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISlider+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CB02021950B00712875 /* UISwitch+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISwitch+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CB12021950B00712875 /* UITableView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CB22021950B00712875 /* UITableViewCell+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CB32021950B00712875 /* UITextField+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CB42021950B00712875 /* UITextView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CB52021950B00712875 /* UIView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CB62021950B00712875 /* UIViewController+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CB72021950B00712875 /* UIWebView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CB82021950B00712875 /* UIWindow+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CB92021950B00712875 /* URL+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CBA2021950B00712875 /* WKWebView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WKWebView+SWFBuilder.swift"; sourceTree = "<group>"; };
+		347E7CEC20219DE100712875 /* NSMutableParagraphStyle+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableParagraphStyle+SWFBuilder.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		347E7C55202194E700712875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		347E7C69202194E700712875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		347E7C74202194E700712875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		347E7C4F202194E700712875 = {
+			isa = PBXGroup;
+			children = (
+				347E7C5A202194E700712875 /* SWFBuilderDemo */,
+				347E7C6F202194E700712875 /* SWFBuilderDemoTests */,
+				347E7C7A202194E700712875 /* SWFBuilderDemoUITests */,
+				347E7C59202194E700712875 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		347E7C59202194E700712875 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				347E7C58202194E700712875 /* SWFBuilderDemo.app */,
+				347E7C6C202194E700712875 /* SWFBuilderDemoTests.xctest */,
+				347E7C77202194E700712875 /* SWFBuilderDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		347E7C5A202194E700712875 /* SWFBuilderDemo */ = {
+			isa = PBXGroup;
+			children = (
+				347E7C892021950B00712875 /* SWFBuilder */,
+				347E7C5B202194E700712875 /* AppDelegate.swift */,
+				347E7C5D202194E700712875 /* ViewController.swift */,
+				347E7C5F202194E700712875 /* Main.storyboard */,
+				347E7C62202194E700712875 /* Assets.xcassets */,
+				347E7C64202194E700712875 /* LaunchScreen.storyboard */,
+				347E7C67202194E700712875 /* Info.plist */,
+			);
+			path = SWFBuilderDemo;
+			sourceTree = "<group>";
+		};
+		347E7C6F202194E700712875 /* SWFBuilderDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				347E7C70202194E700712875 /* SWFBuilderDemoTests.swift */,
+				347E7C72202194E700712875 /* Info.plist */,
+			);
+			path = SWFBuilderDemoTests;
+			sourceTree = "<group>";
+		};
+		347E7C7A202194E700712875 /* SWFBuilderDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				347E7C7B202194E700712875 /* SWFBuilderDemoUITests.swift */,
+				347E7C7D202194E700712875 /* Info.plist */,
+			);
+			path = SWFBuilderDemoUITests;
+			sourceTree = "<group>";
+		};
+		347E7C892021950B00712875 /* SWFBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				347E7C8A2021950B00712875 /* Data+SWFBuilder.swift */,
+				347E7C8B2021950B00712875 /* Date+SWFBuilder.swift */,
+				347E7C8C2021950B00712875 /* DateFormatter+SWFBuilder.swift */,
+				347E7C8D2021950B00712875 /* Dictionary+SWFBuilder.swift */,
+				347E7C8E2021950B00712875 /* NSArray+SWFBuilder.swift */,
+				347E7C8F2021950B00712875 /* NSAttributedString+SWFBuilder.swift */,
+				347E7CEC20219DE100712875 /* NSMutableParagraphStyle+SWFBuilder.swift */,
+				347E7C902021950B00712875 /* NSMutableArray+SWFBuilder.swift */,
+				347E7C912021950B00712875 /* NSMutableAttributedString+SWFBuilder.swift */,
+				347E7C922021950B00712875 /* NSObject+SWFBuilder.swift */,
+				347E7C932021950B00712875 /* SFAlert.swift */,
+				347E7C942021950B00712875 /* SFConfig.swift */,
+				347E7C952021950B00712875 /* SFDefine.swift */,
+				347E7C962021950B00712875 /* SFFunc.swift */,
+				347E7C972021950B00712875 /* SFMake.swift */,
+				347E7C982021950B00712875 /* SFProtocol.swift */,
+				347E7C992021950B00712875 /* SFQueue.swift */,
+				347E7C9A2021950B00712875 /* SFUtils.swift */,
+				347E7C9B2021950B00712875 /* String+SWFBuilder.swift */,
+				347E7C9C2021950B00712875 /* UIActivityIndicatorView+SWFBuilder.swift */,
+				347E7C9D2021950B00712875 /* UIApplication+SWFBuilder.swift */,
+				347E7C9E2021950B00712875 /* UIButton+SWFBuilder.swift */,
+				347E7C9F2021950B00712875 /* UICollectionView+SWFBuilder.swift */,
+				347E7CA02021950B00712875 /* UICollectionViewCell+SWFBuilder.swift */,
+				347E7CA12021950B00712875 /* UICollectionViewFlowLayout+SWFBuilder.swift */,
+				347E7CA22021950B00712875 /* UICollectionViewLayout+SWFBuilder.swift */,
+				347E7CA32021950B00712875 /* UIColor+SWFBuilder.swift */,
+				347E7CA42021950B00712875 /* UIDatePicker+SWFBuilder.swift */,
+				347E7CA52021950B00712875 /* UIFont+SWFBuilder.swift */,
+				347E7CA62021950B00712875 /* UIImage+SWFBuilder.swift */,
+				347E7CA72021950B00712875 /* UIImageView+SWFBuilder.swift */,
+				347E7CA82021950B00712875 /* UILabel+SWFBuilder.swift */,
+				347E7CA92021950B00712875 /* UINavigationControllor+SWFBuilder.swift */,
+				347E7CAA2021950B00712875 /* UIPageControl+SWFBuilder.swift */,
+				347E7CAB2021950B00712875 /* UIPickerView+SWFBuilder.swift */,
+				347E7CAC2021950B00712875 /* UIScrollView+SWFBuilder.swift */,
+				347E7CAD2021950B00712875 /* UISearchBar+SWFBuilder.swift */,
+				347E7CAE2021950B00712875 /* UISegmentedControl+SWFBuilder.swift */,
+				347E7CAF2021950B00712875 /* UISlider+SWFBuilder.swift */,
+				347E7CB02021950B00712875 /* UISwitch+SWFBuilder.swift */,
+				347E7CB12021950B00712875 /* UITableView+SWFBuilder.swift */,
+				347E7CB22021950B00712875 /* UITableViewCell+SWFBuilder.swift */,
+				347E7CB32021950B00712875 /* UITextField+SWFBuilder.swift */,
+				347E7CB42021950B00712875 /* UITextView+SWFBuilder.swift */,
+				347E7CB52021950B00712875 /* UIView+SWFBuilder.swift */,
+				347E7CB62021950B00712875 /* UIViewController+SWFBuilder.swift */,
+				347E7CB72021950B00712875 /* UIWebView+SWFBuilder.swift */,
+				347E7CB82021950B00712875 /* UIWindow+SWFBuilder.swift */,
+				347E7CB92021950B00712875 /* URL+SWFBuilder.swift */,
+				347E7CBA2021950B00712875 /* WKWebView+SWFBuilder.swift */,
+			);
+			path = SWFBuilder;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		347E7C57202194E700712875 /* SWFBuilderDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 347E7C80202194E700712875 /* Build configuration list for PBXNativeTarget "SWFBuilderDemo" */;
+			buildPhases = (
+				347E7C54202194E700712875 /* Sources */,
+				347E7C55202194E700712875 /* Frameworks */,
+				347E7C56202194E700712875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SWFBuilderDemo;
+			productName = SWFBuilderDemo;
+			productReference = 347E7C58202194E700712875 /* SWFBuilderDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		347E7C6B202194E700712875 /* SWFBuilderDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 347E7C83202194E700712875 /* Build configuration list for PBXNativeTarget "SWFBuilderDemoTests" */;
+			buildPhases = (
+				347E7C68202194E700712875 /* Sources */,
+				347E7C69202194E700712875 /* Frameworks */,
+				347E7C6A202194E700712875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				347E7C6E202194E700712875 /* PBXTargetDependency */,
+			);
+			name = SWFBuilderDemoTests;
+			productName = SWFBuilderDemoTests;
+			productReference = 347E7C6C202194E700712875 /* SWFBuilderDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		347E7C76202194E700712875 /* SWFBuilderDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 347E7C86202194E700712875 /* Build configuration list for PBXNativeTarget "SWFBuilderDemoUITests" */;
+			buildPhases = (
+				347E7C73202194E700712875 /* Sources */,
+				347E7C74202194E700712875 /* Frameworks */,
+				347E7C75202194E700712875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				347E7C79202194E700712875 /* PBXTargetDependency */,
+			);
+			name = SWFBuilderDemoUITests;
+			productName = SWFBuilderDemoUITests;
+			productReference = 347E7C77202194E700712875 /* SWFBuilderDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		347E7C50202194E700712875 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = liangweifeng;
+				TargetAttributes = {
+					347E7C57202194E700712875 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					347E7C6B202194E700712875 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 347E7C57202194E700712875;
+					};
+					347E7C76202194E700712875 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 347E7C57202194E700712875;
+					};
+				};
+			};
+			buildConfigurationList = 347E7C53202194E700712875 /* Build configuration list for PBXProject "SWFBuilderDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 347E7C4F202194E700712875;
+			productRefGroup = 347E7C59202194E700712875 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				347E7C57202194E700712875 /* SWFBuilderDemo */,
+				347E7C6B202194E700712875 /* SWFBuilderDemoTests */,
+				347E7C76202194E700712875 /* SWFBuilderDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		347E7C56202194E700712875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				347E7C66202194E700712875 /* LaunchScreen.storyboard in Resources */,
+				347E7C63202194E700712875 /* Assets.xcassets in Resources */,
+				347E7C61202194E700712875 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		347E7C6A202194E700712875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		347E7C75202194E700712875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		347E7C54202194E700712875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				347E7CE12021950C00712875 /* UISwitch+SWFBuilder.swift in Sources */,
+				347E7CEB2021950C00712875 /* WKWebView+SWFBuilder.swift in Sources */,
+				347E7CCF2021950C00712875 /* UIButton+SWFBuilder.swift in Sources */,
+				347E7CC02021950C00712875 /* NSAttributedString+SWFBuilder.swift in Sources */,
+				347E7CE32021950C00712875 /* UITableViewCell+SWFBuilder.swift in Sources */,
+				347E7CD32021950C00712875 /* UICollectionViewLayout+SWFBuilder.swift in Sources */,
+				347E7CC72021950C00712875 /* SFFunc.swift in Sources */,
+				347E7CDE2021950C00712875 /* UISearchBar+SWFBuilder.swift in Sources */,
+				347E7CE62021950C00712875 /* UIView+SWFBuilder.swift in Sources */,
+				347E7CD22021950C00712875 /* UICollectionViewFlowLayout+SWFBuilder.swift in Sources */,
+				347E7CE42021950C00712875 /* UITextField+SWFBuilder.swift in Sources */,
+				347E7CDC2021950C00712875 /* UIPickerView+SWFBuilder.swift in Sources */,
+				347E7CC22021950C00712875 /* NSMutableAttributedString+SWFBuilder.swift in Sources */,
+				347E7CE52021950C00712875 /* UITextView+SWFBuilder.swift in Sources */,
+				347E7CDD2021950C00712875 /* UIScrollView+SWFBuilder.swift in Sources */,
+				347E7CE82021950C00712875 /* UIWebView+SWFBuilder.swift in Sources */,
+				347E7CDB2021950C00712875 /* UIPageControl+SWFBuilder.swift in Sources */,
+				347E7CBE2021950B00712875 /* Dictionary+SWFBuilder.swift in Sources */,
+				347E7CC92021950C00712875 /* SFProtocol.swift in Sources */,
+				347E7CEA2021950C00712875 /* URL+SWFBuilder.swift in Sources */,
+				347E7CE92021950C00712875 /* UIWindow+SWFBuilder.swift in Sources */,
+				347E7CC62021950C00712875 /* SFDefine.swift in Sources */,
+				347E7CBD2021950B00712875 /* DateFormatter+SWFBuilder.swift in Sources */,
+				347E7CC32021950C00712875 /* NSObject+SWFBuilder.swift in Sources */,
+				347E7CE22021950C00712875 /* UITableView+SWFBuilder.swift in Sources */,
+				347E7CE72021950C00712875 /* UIViewController+SWFBuilder.swift in Sources */,
+				347E7CD02021950C00712875 /* UICollectionView+SWFBuilder.swift in Sources */,
+				347E7CD52021950C00712875 /* UIDatePicker+SWFBuilder.swift in Sources */,
+				347E7CC42021950C00712875 /* SFAlert.swift in Sources */,
+				347E7CBC2021950B00712875 /* Date+SWFBuilder.swift in Sources */,
+				347E7CD92021950C00712875 /* UILabel+SWFBuilder.swift in Sources */,
+				347E7CED20219DE100712875 /* NSMutableParagraphStyle+SWFBuilder.swift in Sources */,
+				347E7CD72021950C00712875 /* UIImage+SWFBuilder.swift in Sources */,
+				347E7CD62021950C00712875 /* UIFont+SWFBuilder.swift in Sources */,
+				347E7CC12021950C00712875 /* NSMutableArray+SWFBuilder.swift in Sources */,
+				347E7CCE2021950C00712875 /* UIApplication+SWFBuilder.swift in Sources */,
+				347E7CCC2021950C00712875 /* String+SWFBuilder.swift in Sources */,
+				347E7CCD2021950C00712875 /* UIActivityIndicatorView+SWFBuilder.swift in Sources */,
+				347E7CD82021950C00712875 /* UIImageView+SWFBuilder.swift in Sources */,
+				347E7CD42021950C00712875 /* UIColor+SWFBuilder.swift in Sources */,
+				347E7CC52021950C00712875 /* SFConfig.swift in Sources */,
+				347E7CD12021950C00712875 /* UICollectionViewCell+SWFBuilder.swift in Sources */,
+				347E7CDF2021950C00712875 /* UISegmentedControl+SWFBuilder.swift in Sources */,
+				347E7CE02021950C00712875 /* UISlider+SWFBuilder.swift in Sources */,
+				347E7CDA2021950C00712875 /* UINavigationControllor+SWFBuilder.swift in Sources */,
+				347E7C5E202194E700712875 /* ViewController.swift in Sources */,
+				347E7C5C202194E700712875 /* AppDelegate.swift in Sources */,
+				347E7CBB2021950B00712875 /* Data+SWFBuilder.swift in Sources */,
+				347E7CC82021950C00712875 /* SFMake.swift in Sources */,
+				347E7CCA2021950C00712875 /* SFQueue.swift in Sources */,
+				347E7CCB2021950C00712875 /* SFUtils.swift in Sources */,
+				347E7CBF2021950B00712875 /* NSArray+SWFBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		347E7C68202194E700712875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				347E7C71202194E700712875 /* SWFBuilderDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		347E7C73202194E700712875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				347E7C7C202194E700712875 /* SWFBuilderDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		347E7C6E202194E700712875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 347E7C57202194E700712875 /* SWFBuilderDemo */;
+			targetProxy = 347E7C6D202194E700712875 /* PBXContainerItemProxy */;
+		};
+		347E7C79202194E700712875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 347E7C57202194E700712875 /* SWFBuilderDemo */;
+			targetProxy = 347E7C78202194E700712875 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		347E7C5F202194E700712875 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				347E7C60202194E700712875 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		347E7C64202194E700712875 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				347E7C65202194E700712875 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		347E7C7E202194E700712875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		347E7C7F202194E700712875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		347E7C81202194E700712875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VKEL9TSY3J;
+				INFOPLIST_FILE = SWFBuilderDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.anody.swfbuilder.SWFBuilderDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		347E7C82202194E700712875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VKEL9TSY3J;
+				INFOPLIST_FILE = SWFBuilderDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.anody.swfbuilder.SWFBuilderDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		347E7C84202194E700712875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VKEL9TSY3J;
+				INFOPLIST_FILE = SWFBuilderDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.anody.swfbuilder.SWFBuilderDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SWFBuilderDemo.app/SWFBuilderDemo";
+			};
+			name = Debug;
+		};
+		347E7C85202194E700712875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VKEL9TSY3J;
+				INFOPLIST_FILE = SWFBuilderDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.anody.swfbuilder.SWFBuilderDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SWFBuilderDemo.app/SWFBuilderDemo";
+			};
+			name = Release;
+		};
+		347E7C87202194E700712875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VKEL9TSY3J;
+				INFOPLIST_FILE = SWFBuilderDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.anody.swfbuilder.SWFBuilderDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SWFBuilderDemo;
+			};
+			name = Debug;
+		};
+		347E7C88202194E700712875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VKEL9TSY3J;
+				INFOPLIST_FILE = SWFBuilderDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.anody.swfbuilder.SWFBuilderDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SWFBuilderDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		347E7C53202194E700712875 /* Build configuration list for PBXProject "SWFBuilderDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				347E7C7E202194E700712875 /* Debug */,
+				347E7C7F202194E700712875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		347E7C80202194E700712875 /* Build configuration list for PBXNativeTarget "SWFBuilderDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				347E7C81202194E700712875 /* Debug */,
+				347E7C82202194E700712875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		347E7C83202194E700712875 /* Build configuration list for PBXNativeTarget "SWFBuilderDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				347E7C84202194E700712875 /* Debug */,
+				347E7C85202194E700712875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		347E7C86202194E700712875 /* Build configuration list for PBXNativeTarget "SWFBuilderDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				347E7C87202194E700712875 /* Debug */,
+				347E7C88202194E700712875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 347E7C50202194E700712875 /* Project object */;
+}
