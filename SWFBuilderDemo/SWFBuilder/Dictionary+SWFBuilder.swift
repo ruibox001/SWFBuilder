@@ -12,14 +12,7 @@ import UIKit
 extension Dictionary
 {
     func dictToString() -> String? {
-        
-        do {
-            let j = try JSONSerialization.data(withJSONObject: self, options: JSONSerialization.WritingOptions.prettyPrinted)
-            return String.init(data: j, encoding: String.Encoding.utf8)
-        } catch _ {
-            
-        }
-        return nil
+        return self.dictToData()?.dataToString()
     }
     
     func dictToData() -> Data? {

@@ -40,6 +40,12 @@ func AttributedString(_ string: String, attributes attrs: [NSAttributedStringKey
     return NSAttributedString.init(string: string, attributes: attrs)
 }
 
+func AttributedString(_ string: String, attributes attrs: [NSAttributedStringKey : Any]?, _ font: UIFont) -> NSAttributedString {
+    let dict: NSMutableDictionary = NSMutableDictionary.init(dictionary: attrs!)
+    dict.setObject(font, forKey: NSAttributedStringKey.font as NSCopying)
+    return NSAttributedString.init(string: string, attributes: dict as? [NSAttributedStringKey : Any])
+}
+
 extension NSAttributedString
 {
     
