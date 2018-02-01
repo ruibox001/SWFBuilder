@@ -14,56 +14,56 @@
 		347E7C66202194E700712875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347E7C64202194E700712875 /* LaunchScreen.storyboard */; };
 		347E7C71202194E700712875 /* SWFBuilderDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C70202194E700712875 /* SWFBuilderDemoTests.swift */; };
 		347E7C7C202194E700712875 /* SWFBuilderDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C7B202194E700712875 /* SWFBuilderDemoUITests.swift */; };
-		347E7CBB2021950B00712875 /* Data+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C8A2021950B00712875 /* Data+SWFBuilder.swift */; };
-		347E7CBC2021950B00712875 /* Date+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C8B2021950B00712875 /* Date+SWFBuilder.swift */; };
-		347E7CBD2021950B00712875 /* DateFormatter+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C8C2021950B00712875 /* DateFormatter+SWFBuilder.swift */; };
-		347E7CBE2021950B00712875 /* Dictionary+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C8D2021950B00712875 /* Dictionary+SWFBuilder.swift */; };
-		347E7CBF2021950B00712875 /* NSArray+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C8E2021950B00712875 /* NSArray+SWFBuilder.swift */; };
-		347E7CC02021950C00712875 /* NSAttributedString+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C8F2021950B00712875 /* NSAttributedString+SWFBuilder.swift */; };
-		347E7CC12021950C00712875 /* NSMutableArray+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C902021950B00712875 /* NSMutableArray+SWFBuilder.swift */; };
-		347E7CC22021950C00712875 /* NSMutableAttributedString+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C912021950B00712875 /* NSMutableAttributedString+SWFBuilder.swift */; };
-		347E7CC32021950C00712875 /* NSObject+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C922021950B00712875 /* NSObject+SWFBuilder.swift */; };
-		347E7CC42021950C00712875 /* SFAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C932021950B00712875 /* SFAlert.swift */; };
-		347E7CC52021950C00712875 /* SFConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C942021950B00712875 /* SFConfig.swift */; };
-		347E7CC62021950C00712875 /* SFDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C952021950B00712875 /* SFDefine.swift */; };
-		347E7CC72021950C00712875 /* SFFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C962021950B00712875 /* SFFunc.swift */; };
-		347E7CC82021950C00712875 /* SFMake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C972021950B00712875 /* SFMake.swift */; };
-		347E7CC92021950C00712875 /* SFProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C982021950B00712875 /* SFProtocol.swift */; };
-		347E7CCA2021950C00712875 /* SFQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C992021950B00712875 /* SFQueue.swift */; };
-		347E7CCB2021950C00712875 /* SFUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C9A2021950B00712875 /* SFUtils.swift */; };
-		347E7CCC2021950C00712875 /* String+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C9B2021950B00712875 /* String+SWFBuilder.swift */; };
-		347E7CCD2021950C00712875 /* UIActivityIndicatorView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C9C2021950B00712875 /* UIActivityIndicatorView+SWFBuilder.swift */; };
-		347E7CCE2021950C00712875 /* UIApplication+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C9D2021950B00712875 /* UIApplication+SWFBuilder.swift */; };
-		347E7CCF2021950C00712875 /* UIButton+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C9E2021950B00712875 /* UIButton+SWFBuilder.swift */; };
-		347E7CD02021950C00712875 /* UICollectionView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C9F2021950B00712875 /* UICollectionView+SWFBuilder.swift */; };
-		347E7CD12021950C00712875 /* UICollectionViewCell+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CA02021950B00712875 /* UICollectionViewCell+SWFBuilder.swift */; };
-		347E7CD22021950C00712875 /* UICollectionViewFlowLayout+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CA12021950B00712875 /* UICollectionViewFlowLayout+SWFBuilder.swift */; };
-		347E7CD32021950C00712875 /* UICollectionViewLayout+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CA22021950B00712875 /* UICollectionViewLayout+SWFBuilder.swift */; };
-		347E7CD42021950C00712875 /* UIColor+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CA32021950B00712875 /* UIColor+SWFBuilder.swift */; };
-		347E7CD52021950C00712875 /* UIDatePicker+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CA42021950B00712875 /* UIDatePicker+SWFBuilder.swift */; };
-		347E7CD62021950C00712875 /* UIFont+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CA52021950B00712875 /* UIFont+SWFBuilder.swift */; };
-		347E7CD72021950C00712875 /* UIImage+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CA62021950B00712875 /* UIImage+SWFBuilder.swift */; };
-		347E7CD82021950C00712875 /* UIImageView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CA72021950B00712875 /* UIImageView+SWFBuilder.swift */; };
-		347E7CD92021950C00712875 /* UILabel+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CA82021950B00712875 /* UILabel+SWFBuilder.swift */; };
-		347E7CDA2021950C00712875 /* UINavigationControllor+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CA92021950B00712875 /* UINavigationControllor+SWFBuilder.swift */; };
-		347E7CDB2021950C00712875 /* UIPageControl+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CAA2021950B00712875 /* UIPageControl+SWFBuilder.swift */; };
-		347E7CDC2021950C00712875 /* UIPickerView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CAB2021950B00712875 /* UIPickerView+SWFBuilder.swift */; };
-		347E7CDD2021950C00712875 /* UIScrollView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CAC2021950B00712875 /* UIScrollView+SWFBuilder.swift */; };
-		347E7CDE2021950C00712875 /* UISearchBar+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CAD2021950B00712875 /* UISearchBar+SWFBuilder.swift */; };
-		347E7CDF2021950C00712875 /* UISegmentedControl+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CAE2021950B00712875 /* UISegmentedControl+SWFBuilder.swift */; };
-		347E7CE02021950C00712875 /* UISlider+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CAF2021950B00712875 /* UISlider+SWFBuilder.swift */; };
-		347E7CE12021950C00712875 /* UISwitch+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CB02021950B00712875 /* UISwitch+SWFBuilder.swift */; };
-		347E7CE22021950C00712875 /* UITableView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CB12021950B00712875 /* UITableView+SWFBuilder.swift */; };
-		347E7CE32021950C00712875 /* UITableViewCell+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CB22021950B00712875 /* UITableViewCell+SWFBuilder.swift */; };
-		347E7CE42021950C00712875 /* UITextField+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CB32021950B00712875 /* UITextField+SWFBuilder.swift */; };
-		347E7CE52021950C00712875 /* UITextView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CB42021950B00712875 /* UITextView+SWFBuilder.swift */; };
-		347E7CE62021950C00712875 /* UIView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CB52021950B00712875 /* UIView+SWFBuilder.swift */; };
-		347E7CE72021950C00712875 /* UIViewController+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CB62021950B00712875 /* UIViewController+SWFBuilder.swift */; };
-		347E7CE82021950C00712875 /* UIWebView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CB72021950B00712875 /* UIWebView+SWFBuilder.swift */; };
-		347E7CE92021950C00712875 /* UIWindow+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CB82021950B00712875 /* UIWindow+SWFBuilder.swift */; };
-		347E7CEA2021950C00712875 /* URL+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CB92021950B00712875 /* URL+SWFBuilder.swift */; };
-		347E7CEB2021950C00712875 /* WKWebView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CBA2021950B00712875 /* WKWebView+SWFBuilder.swift */; };
-		347E7CED20219DE100712875 /* NSMutableParagraphStyle+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7CEC20219DE100712875 /* NSMutableParagraphStyle+SWFBuilder.swift */; };
+		34E47F952022E575005E855C /* Data+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F632022E575005E855C /* Data+SWFBuilder.swift */; };
+		34E47F962022E575005E855C /* Date+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F642022E575005E855C /* Date+SWFBuilder.swift */; };
+		34E47F972022E575005E855C /* DateFormatter+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F652022E575005E855C /* DateFormatter+SWFBuilder.swift */; };
+		34E47F982022E575005E855C /* Dictionary+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F662022E575005E855C /* Dictionary+SWFBuilder.swift */; };
+		34E47F992022E575005E855C /* NSArray+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F672022E575005E855C /* NSArray+SWFBuilder.swift */; };
+		34E47F9A2022E575005E855C /* NSAttributedString+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F682022E575005E855C /* NSAttributedString+SWFBuilder.swift */; };
+		34E47F9B2022E575005E855C /* NSMutableArray+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F692022E575005E855C /* NSMutableArray+SWFBuilder.swift */; };
+		34E47F9C2022E575005E855C /* NSMutableAttributedString+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F6A2022E575005E855C /* NSMutableAttributedString+SWFBuilder.swift */; };
+		34E47F9D2022E575005E855C /* NSMutableParagraphStyle+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F6B2022E575005E855C /* NSMutableParagraphStyle+SWFBuilder.swift */; };
+		34E47F9E2022E575005E855C /* NSObject+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F6C2022E575005E855C /* NSObject+SWFBuilder.swift */; };
+		34E47F9F2022E575005E855C /* SFAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F6D2022E575005E855C /* SFAlert.swift */; };
+		34E47FA02022E575005E855C /* SFConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F6E2022E575005E855C /* SFConfig.swift */; };
+		34E47FA12022E575005E855C /* SFDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F6F2022E575005E855C /* SFDefine.swift */; };
+		34E47FA22022E575005E855C /* SFFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F702022E575005E855C /* SFFunc.swift */; };
+		34E47FA32022E575005E855C /* SFMake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F712022E575005E855C /* SFMake.swift */; };
+		34E47FA42022E575005E855C /* SFProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F722022E575005E855C /* SFProtocol.swift */; };
+		34E47FA52022E575005E855C /* SFQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F732022E575005E855C /* SFQueue.swift */; };
+		34E47FA62022E575005E855C /* SFUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F742022E575005E855C /* SFUtils.swift */; };
+		34E47FA72022E575005E855C /* String+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F752022E575005E855C /* String+SWFBuilder.swift */; };
+		34E47FA82022E575005E855C /* UIActivityIndicatorView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F762022E575005E855C /* UIActivityIndicatorView+SWFBuilder.swift */; };
+		34E47FA92022E575005E855C /* UIApplication+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F772022E575005E855C /* UIApplication+SWFBuilder.swift */; };
+		34E47FAA2022E575005E855C /* UIButton+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F782022E575005E855C /* UIButton+SWFBuilder.swift */; };
+		34E47FAB2022E575005E855C /* UICollectionView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F792022E575005E855C /* UICollectionView+SWFBuilder.swift */; };
+		34E47FAC2022E575005E855C /* UICollectionViewCell+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F7A2022E575005E855C /* UICollectionViewCell+SWFBuilder.swift */; };
+		34E47FAD2022E575005E855C /* UICollectionViewFlowLayout+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F7B2022E575005E855C /* UICollectionViewFlowLayout+SWFBuilder.swift */; };
+		34E47FAE2022E575005E855C /* UICollectionViewLayout+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F7C2022E575005E855C /* UICollectionViewLayout+SWFBuilder.swift */; };
+		34E47FAF2022E575005E855C /* UIColor+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F7D2022E575005E855C /* UIColor+SWFBuilder.swift */; };
+		34E47FB02022E575005E855C /* UIDatePicker+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F7E2022E575005E855C /* UIDatePicker+SWFBuilder.swift */; };
+		34E47FB12022E575005E855C /* UIFont+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F7F2022E575005E855C /* UIFont+SWFBuilder.swift */; };
+		34E47FB22022E575005E855C /* UIImage+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F802022E575005E855C /* UIImage+SWFBuilder.swift */; };
+		34E47FB32022E575005E855C /* UIImageView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F812022E575005E855C /* UIImageView+SWFBuilder.swift */; };
+		34E47FB42022E575005E855C /* UILabel+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F822022E575005E855C /* UILabel+SWFBuilder.swift */; };
+		34E47FB52022E575005E855C /* UINavigationControllor+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F832022E575005E855C /* UINavigationControllor+SWFBuilder.swift */; };
+		34E47FB62022E575005E855C /* UIPageControl+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F842022E575005E855C /* UIPageControl+SWFBuilder.swift */; };
+		34E47FB72022E575005E855C /* UIPickerView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F852022E575005E855C /* UIPickerView+SWFBuilder.swift */; };
+		34E47FB82022E575005E855C /* UIScrollView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F862022E575005E855C /* UIScrollView+SWFBuilder.swift */; };
+		34E47FB92022E575005E855C /* UISearchBar+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F872022E575005E855C /* UISearchBar+SWFBuilder.swift */; };
+		34E47FBA2022E575005E855C /* UISegmentedControl+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F882022E575005E855C /* UISegmentedControl+SWFBuilder.swift */; };
+		34E47FBB2022E575005E855C /* UISlider+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F892022E575005E855C /* UISlider+SWFBuilder.swift */; };
+		34E47FBC2022E575005E855C /* UISwitch+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F8A2022E575005E855C /* UISwitch+SWFBuilder.swift */; };
+		34E47FBD2022E575005E855C /* UITableView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F8B2022E575005E855C /* UITableView+SWFBuilder.swift */; };
+		34E47FBE2022E575005E855C /* UITableViewCell+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F8C2022E575005E855C /* UITableViewCell+SWFBuilder.swift */; };
+		34E47FBF2022E575005E855C /* UITextField+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F8D2022E575005E855C /* UITextField+SWFBuilder.swift */; };
+		34E47FC02022E575005E855C /* UITextView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F8E2022E575005E855C /* UITextView+SWFBuilder.swift */; };
+		34E47FC12022E575005E855C /* UIView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F8F2022E575005E855C /* UIView+SWFBuilder.swift */; };
+		34E47FC22022E575005E855C /* UIViewController+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F902022E575005E855C /* UIViewController+SWFBuilder.swift */; };
+		34E47FC32022E575005E855C /* UIWebView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F912022E575005E855C /* UIWebView+SWFBuilder.swift */; };
+		34E47FC42022E575005E855C /* UIWindow+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F922022E575005E855C /* UIWindow+SWFBuilder.swift */; };
+		34E47FC52022E575005E855C /* URL+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F932022E575005E855C /* URL+SWFBuilder.swift */; };
+		34E47FC62022E575005E855C /* WKWebView+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F942022E575005E855C /* WKWebView+SWFBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,56 +97,56 @@
 		347E7C77202194E700712875 /* SWFBuilderDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWFBuilderDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		347E7C7B202194E700712875 /* SWFBuilderDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFBuilderDemoUITests.swift; sourceTree = "<group>"; };
 		347E7C7D202194E700712875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		347E7C8A2021950B00712875 /* Data+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7C8B2021950B00712875 /* Date+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7C8C2021950B00712875 /* DateFormatter+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7C8D2021950B00712875 /* Dictionary+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7C8E2021950B00712875 /* NSArray+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSArray+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7C8F2021950B00712875 /* NSAttributedString+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7C902021950B00712875 /* NSMutableArray+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableArray+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7C912021950B00712875 /* NSMutableAttributedString+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7C922021950B00712875 /* NSObject+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7C932021950B00712875 /* SFAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFAlert.swift; sourceTree = "<group>"; };
-		347E7C942021950B00712875 /* SFConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFConfig.swift; sourceTree = "<group>"; };
-		347E7C952021950B00712875 /* SFDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDefine.swift; sourceTree = "<group>"; };
-		347E7C962021950B00712875 /* SFFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFunc.swift; sourceTree = "<group>"; };
-		347E7C972021950B00712875 /* SFMake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFMake.swift; sourceTree = "<group>"; };
-		347E7C982021950B00712875 /* SFProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFProtocol.swift; sourceTree = "<group>"; };
-		347E7C992021950B00712875 /* SFQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFQueue.swift; sourceTree = "<group>"; };
-		347E7C9A2021950B00712875 /* SFUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFUtils.swift; sourceTree = "<group>"; };
-		347E7C9B2021950B00712875 /* String+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7C9C2021950B00712875 /* UIActivityIndicatorView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7C9D2021950B00712875 /* UIApplication+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7C9E2021950B00712875 /* UIButton+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7C9F2021950B00712875 /* UICollectionView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CA02021950B00712875 /* UICollectionViewCell+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CA12021950B00712875 /* UICollectionViewFlowLayout+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CA22021950B00712875 /* UICollectionViewLayout+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewLayout+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CA32021950B00712875 /* UIColor+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CA42021950B00712875 /* UIDatePicker+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDatePicker+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CA52021950B00712875 /* UIFont+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CA62021950B00712875 /* UIImage+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CA72021950B00712875 /* UIImageView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CA82021950B00712875 /* UILabel+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CA92021950B00712875 /* UINavigationControllor+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationControllor+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CAA2021950B00712875 /* UIPageControl+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPageControl+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CAB2021950B00712875 /* UIPickerView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPickerView+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CAC2021950B00712875 /* UIScrollView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CAD2021950B00712875 /* UISearchBar+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CAE2021950B00712875 /* UISegmentedControl+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CAF2021950B00712875 /* UISlider+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISlider+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CB02021950B00712875 /* UISwitch+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISwitch+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CB12021950B00712875 /* UITableView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CB22021950B00712875 /* UITableViewCell+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CB32021950B00712875 /* UITextField+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CB42021950B00712875 /* UITextView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CB52021950B00712875 /* UIView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CB62021950B00712875 /* UIViewController+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CB72021950B00712875 /* UIWebView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CB82021950B00712875 /* UIWindow+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CB92021950B00712875 /* URL+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CBA2021950B00712875 /* WKWebView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WKWebView+SWFBuilder.swift"; sourceTree = "<group>"; };
-		347E7CEC20219DE100712875 /* NSMutableParagraphStyle+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableParagraphStyle+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F632022E575005E855C /* Data+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F642022E575005E855C /* Date+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F652022E575005E855C /* DateFormatter+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F662022E575005E855C /* Dictionary+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F672022E575005E855C /* NSArray+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSArray+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F682022E575005E855C /* NSAttributedString+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F692022E575005E855C /* NSMutableArray+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableArray+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F6A2022E575005E855C /* NSMutableAttributedString+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F6B2022E575005E855C /* NSMutableParagraphStyle+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableParagraphStyle+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F6C2022E575005E855C /* NSObject+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F6D2022E575005E855C /* SFAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFAlert.swift; sourceTree = "<group>"; };
+		34E47F6E2022E575005E855C /* SFConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFConfig.swift; sourceTree = "<group>"; };
+		34E47F6F2022E575005E855C /* SFDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDefine.swift; sourceTree = "<group>"; };
+		34E47F702022E575005E855C /* SFFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFunc.swift; sourceTree = "<group>"; };
+		34E47F712022E575005E855C /* SFMake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFMake.swift; sourceTree = "<group>"; };
+		34E47F722022E575005E855C /* SFProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFProtocol.swift; sourceTree = "<group>"; };
+		34E47F732022E575005E855C /* SFQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFQueue.swift; sourceTree = "<group>"; };
+		34E47F742022E575005E855C /* SFUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFUtils.swift; sourceTree = "<group>"; };
+		34E47F752022E575005E855C /* String+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F762022E575005E855C /* UIActivityIndicatorView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F772022E575005E855C /* UIApplication+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F782022E575005E855C /* UIButton+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F792022E575005E855C /* UICollectionView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F7A2022E575005E855C /* UICollectionViewCell+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F7B2022E575005E855C /* UICollectionViewFlowLayout+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F7C2022E575005E855C /* UICollectionViewLayout+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewLayout+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F7D2022E575005E855C /* UIColor+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F7E2022E575005E855C /* UIDatePicker+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDatePicker+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F7F2022E575005E855C /* UIFont+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F802022E575005E855C /* UIImage+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F812022E575005E855C /* UIImageView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F822022E575005E855C /* UILabel+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F832022E575005E855C /* UINavigationControllor+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationControllor+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F842022E575005E855C /* UIPageControl+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPageControl+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F852022E575005E855C /* UIPickerView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPickerView+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F862022E575005E855C /* UIScrollView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F872022E575005E855C /* UISearchBar+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F882022E575005E855C /* UISegmentedControl+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F892022E575005E855C /* UISlider+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISlider+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F8A2022E575005E855C /* UISwitch+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISwitch+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F8B2022E575005E855C /* UITableView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F8C2022E575005E855C /* UITableViewCell+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F8D2022E575005E855C /* UITextField+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F8E2022E575005E855C /* UITextView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F8F2022E575005E855C /* UIView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F902022E575005E855C /* UIViewController+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F912022E575005E855C /* UIWebView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F922022E575005E855C /* UIWindow+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F932022E575005E855C /* URL+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+SWFBuilder.swift"; sourceTree = "<group>"; };
+		34E47F942022E575005E855C /* WKWebView+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WKWebView+SWFBuilder.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +177,7 @@
 		347E7C4F202194E700712875 = {
 			isa = PBXGroup;
 			children = (
+				34E47F622022E575005E855C /* SWFBuilder */,
 				347E7C5A202194E700712875 /* SWFBuilderDemo */,
 				347E7C6F202194E700712875 /* SWFBuilderDemoTests */,
 				347E7C7A202194E700712875 /* SWFBuilderDemoUITests */,
@@ -197,7 +198,6 @@
 		347E7C5A202194E700712875 /* SWFBuilderDemo */ = {
 			isa = PBXGroup;
 			children = (
-				347E7C892021950B00712875 /* SWFBuilder */,
 				347E7C5B202194E700712875 /* AppDelegate.swift */,
 				347E7C5D202194E700712875 /* ViewController.swift */,
 				347E7C5F202194E700712875 /* Main.storyboard */,
@@ -226,59 +226,59 @@
 			path = SWFBuilderDemoUITests;
 			sourceTree = "<group>";
 		};
-		347E7C892021950B00712875 /* SWFBuilder */ = {
+		34E47F622022E575005E855C /* SWFBuilder */ = {
 			isa = PBXGroup;
 			children = (
-				347E7C8A2021950B00712875 /* Data+SWFBuilder.swift */,
-				347E7C8B2021950B00712875 /* Date+SWFBuilder.swift */,
-				347E7C8C2021950B00712875 /* DateFormatter+SWFBuilder.swift */,
-				347E7C8D2021950B00712875 /* Dictionary+SWFBuilder.swift */,
-				347E7C8E2021950B00712875 /* NSArray+SWFBuilder.swift */,
-				347E7C8F2021950B00712875 /* NSAttributedString+SWFBuilder.swift */,
-				347E7CEC20219DE100712875 /* NSMutableParagraphStyle+SWFBuilder.swift */,
-				347E7C902021950B00712875 /* NSMutableArray+SWFBuilder.swift */,
-				347E7C912021950B00712875 /* NSMutableAttributedString+SWFBuilder.swift */,
-				347E7C922021950B00712875 /* NSObject+SWFBuilder.swift */,
-				347E7C932021950B00712875 /* SFAlert.swift */,
-				347E7C942021950B00712875 /* SFConfig.swift */,
-				347E7C952021950B00712875 /* SFDefine.swift */,
-				347E7C962021950B00712875 /* SFFunc.swift */,
-				347E7C972021950B00712875 /* SFMake.swift */,
-				347E7C982021950B00712875 /* SFProtocol.swift */,
-				347E7C992021950B00712875 /* SFQueue.swift */,
-				347E7C9A2021950B00712875 /* SFUtils.swift */,
-				347E7C9B2021950B00712875 /* String+SWFBuilder.swift */,
-				347E7C9C2021950B00712875 /* UIActivityIndicatorView+SWFBuilder.swift */,
-				347E7C9D2021950B00712875 /* UIApplication+SWFBuilder.swift */,
-				347E7C9E2021950B00712875 /* UIButton+SWFBuilder.swift */,
-				347E7C9F2021950B00712875 /* UICollectionView+SWFBuilder.swift */,
-				347E7CA02021950B00712875 /* UICollectionViewCell+SWFBuilder.swift */,
-				347E7CA12021950B00712875 /* UICollectionViewFlowLayout+SWFBuilder.swift */,
-				347E7CA22021950B00712875 /* UICollectionViewLayout+SWFBuilder.swift */,
-				347E7CA32021950B00712875 /* UIColor+SWFBuilder.swift */,
-				347E7CA42021950B00712875 /* UIDatePicker+SWFBuilder.swift */,
-				347E7CA52021950B00712875 /* UIFont+SWFBuilder.swift */,
-				347E7CA62021950B00712875 /* UIImage+SWFBuilder.swift */,
-				347E7CA72021950B00712875 /* UIImageView+SWFBuilder.swift */,
-				347E7CA82021950B00712875 /* UILabel+SWFBuilder.swift */,
-				347E7CA92021950B00712875 /* UINavigationControllor+SWFBuilder.swift */,
-				347E7CAA2021950B00712875 /* UIPageControl+SWFBuilder.swift */,
-				347E7CAB2021950B00712875 /* UIPickerView+SWFBuilder.swift */,
-				347E7CAC2021950B00712875 /* UIScrollView+SWFBuilder.swift */,
-				347E7CAD2021950B00712875 /* UISearchBar+SWFBuilder.swift */,
-				347E7CAE2021950B00712875 /* UISegmentedControl+SWFBuilder.swift */,
-				347E7CAF2021950B00712875 /* UISlider+SWFBuilder.swift */,
-				347E7CB02021950B00712875 /* UISwitch+SWFBuilder.swift */,
-				347E7CB12021950B00712875 /* UITableView+SWFBuilder.swift */,
-				347E7CB22021950B00712875 /* UITableViewCell+SWFBuilder.swift */,
-				347E7CB32021950B00712875 /* UITextField+SWFBuilder.swift */,
-				347E7CB42021950B00712875 /* UITextView+SWFBuilder.swift */,
-				347E7CB52021950B00712875 /* UIView+SWFBuilder.swift */,
-				347E7CB62021950B00712875 /* UIViewController+SWFBuilder.swift */,
-				347E7CB72021950B00712875 /* UIWebView+SWFBuilder.swift */,
-				347E7CB82021950B00712875 /* UIWindow+SWFBuilder.swift */,
-				347E7CB92021950B00712875 /* URL+SWFBuilder.swift */,
-				347E7CBA2021950B00712875 /* WKWebView+SWFBuilder.swift */,
+				34E47F632022E575005E855C /* Data+SWFBuilder.swift */,
+				34E47F642022E575005E855C /* Date+SWFBuilder.swift */,
+				34E47F652022E575005E855C /* DateFormatter+SWFBuilder.swift */,
+				34E47F662022E575005E855C /* Dictionary+SWFBuilder.swift */,
+				34E47F672022E575005E855C /* NSArray+SWFBuilder.swift */,
+				34E47F682022E575005E855C /* NSAttributedString+SWFBuilder.swift */,
+				34E47F692022E575005E855C /* NSMutableArray+SWFBuilder.swift */,
+				34E47F6A2022E575005E855C /* NSMutableAttributedString+SWFBuilder.swift */,
+				34E47F6B2022E575005E855C /* NSMutableParagraphStyle+SWFBuilder.swift */,
+				34E47F6C2022E575005E855C /* NSObject+SWFBuilder.swift */,
+				34E47F6D2022E575005E855C /* SFAlert.swift */,
+				34E47F6E2022E575005E855C /* SFConfig.swift */,
+				34E47F6F2022E575005E855C /* SFDefine.swift */,
+				34E47F702022E575005E855C /* SFFunc.swift */,
+				34E47F712022E575005E855C /* SFMake.swift */,
+				34E47F722022E575005E855C /* SFProtocol.swift */,
+				34E47F732022E575005E855C /* SFQueue.swift */,
+				34E47F742022E575005E855C /* SFUtils.swift */,
+				34E47F752022E575005E855C /* String+SWFBuilder.swift */,
+				34E47F762022E575005E855C /* UIActivityIndicatorView+SWFBuilder.swift */,
+				34E47F772022E575005E855C /* UIApplication+SWFBuilder.swift */,
+				34E47F782022E575005E855C /* UIButton+SWFBuilder.swift */,
+				34E47F792022E575005E855C /* UICollectionView+SWFBuilder.swift */,
+				34E47F7A2022E575005E855C /* UICollectionViewCell+SWFBuilder.swift */,
+				34E47F7B2022E575005E855C /* UICollectionViewFlowLayout+SWFBuilder.swift */,
+				34E47F7C2022E575005E855C /* UICollectionViewLayout+SWFBuilder.swift */,
+				34E47F7D2022E575005E855C /* UIColor+SWFBuilder.swift */,
+				34E47F7E2022E575005E855C /* UIDatePicker+SWFBuilder.swift */,
+				34E47F7F2022E575005E855C /* UIFont+SWFBuilder.swift */,
+				34E47F802022E575005E855C /* UIImage+SWFBuilder.swift */,
+				34E47F812022E575005E855C /* UIImageView+SWFBuilder.swift */,
+				34E47F822022E575005E855C /* UILabel+SWFBuilder.swift */,
+				34E47F832022E575005E855C /* UINavigationControllor+SWFBuilder.swift */,
+				34E47F842022E575005E855C /* UIPageControl+SWFBuilder.swift */,
+				34E47F852022E575005E855C /* UIPickerView+SWFBuilder.swift */,
+				34E47F862022E575005E855C /* UIScrollView+SWFBuilder.swift */,
+				34E47F872022E575005E855C /* UISearchBar+SWFBuilder.swift */,
+				34E47F882022E575005E855C /* UISegmentedControl+SWFBuilder.swift */,
+				34E47F892022E575005E855C /* UISlider+SWFBuilder.swift */,
+				34E47F8A2022E575005E855C /* UISwitch+SWFBuilder.swift */,
+				34E47F8B2022E575005E855C /* UITableView+SWFBuilder.swift */,
+				34E47F8C2022E575005E855C /* UITableViewCell+SWFBuilder.swift */,
+				34E47F8D2022E575005E855C /* UITextField+SWFBuilder.swift */,
+				34E47F8E2022E575005E855C /* UITextView+SWFBuilder.swift */,
+				34E47F8F2022E575005E855C /* UIView+SWFBuilder.swift */,
+				34E47F902022E575005E855C /* UIViewController+SWFBuilder.swift */,
+				34E47F912022E575005E855C /* UIWebView+SWFBuilder.swift */,
+				34E47F922022E575005E855C /* UIWindow+SWFBuilder.swift */,
+				34E47F932022E575005E855C /* URL+SWFBuilder.swift */,
+				34E47F942022E575005E855C /* WKWebView+SWFBuilder.swift */,
 			);
 			path = SWFBuilder;
 			sourceTree = "<group>";
@@ -417,58 +417,58 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				347E7CE12021950C00712875 /* UISwitch+SWFBuilder.swift in Sources */,
-				347E7CEB2021950C00712875 /* WKWebView+SWFBuilder.swift in Sources */,
-				347E7CCF2021950C00712875 /* UIButton+SWFBuilder.swift in Sources */,
-				347E7CC02021950C00712875 /* NSAttributedString+SWFBuilder.swift in Sources */,
-				347E7CE32021950C00712875 /* UITableViewCell+SWFBuilder.swift in Sources */,
-				347E7CD32021950C00712875 /* UICollectionViewLayout+SWFBuilder.swift in Sources */,
-				347E7CC72021950C00712875 /* SFFunc.swift in Sources */,
-				347E7CDE2021950C00712875 /* UISearchBar+SWFBuilder.swift in Sources */,
-				347E7CE62021950C00712875 /* UIView+SWFBuilder.swift in Sources */,
-				347E7CD22021950C00712875 /* UICollectionViewFlowLayout+SWFBuilder.swift in Sources */,
-				347E7CE42021950C00712875 /* UITextField+SWFBuilder.swift in Sources */,
-				347E7CDC2021950C00712875 /* UIPickerView+SWFBuilder.swift in Sources */,
-				347E7CC22021950C00712875 /* NSMutableAttributedString+SWFBuilder.swift in Sources */,
-				347E7CE52021950C00712875 /* UITextView+SWFBuilder.swift in Sources */,
-				347E7CDD2021950C00712875 /* UIScrollView+SWFBuilder.swift in Sources */,
-				347E7CE82021950C00712875 /* UIWebView+SWFBuilder.swift in Sources */,
-				347E7CDB2021950C00712875 /* UIPageControl+SWFBuilder.swift in Sources */,
-				347E7CBE2021950B00712875 /* Dictionary+SWFBuilder.swift in Sources */,
-				347E7CC92021950C00712875 /* SFProtocol.swift in Sources */,
-				347E7CEA2021950C00712875 /* URL+SWFBuilder.swift in Sources */,
-				347E7CE92021950C00712875 /* UIWindow+SWFBuilder.swift in Sources */,
-				347E7CC62021950C00712875 /* SFDefine.swift in Sources */,
-				347E7CBD2021950B00712875 /* DateFormatter+SWFBuilder.swift in Sources */,
-				347E7CC32021950C00712875 /* NSObject+SWFBuilder.swift in Sources */,
-				347E7CE22021950C00712875 /* UITableView+SWFBuilder.swift in Sources */,
-				347E7CE72021950C00712875 /* UIViewController+SWFBuilder.swift in Sources */,
-				347E7CD02021950C00712875 /* UICollectionView+SWFBuilder.swift in Sources */,
-				347E7CD52021950C00712875 /* UIDatePicker+SWFBuilder.swift in Sources */,
-				347E7CC42021950C00712875 /* SFAlert.swift in Sources */,
-				347E7CBC2021950B00712875 /* Date+SWFBuilder.swift in Sources */,
-				347E7CD92021950C00712875 /* UILabel+SWFBuilder.swift in Sources */,
-				347E7CED20219DE100712875 /* NSMutableParagraphStyle+SWFBuilder.swift in Sources */,
-				347E7CD72021950C00712875 /* UIImage+SWFBuilder.swift in Sources */,
-				347E7CD62021950C00712875 /* UIFont+SWFBuilder.swift in Sources */,
-				347E7CC12021950C00712875 /* NSMutableArray+SWFBuilder.swift in Sources */,
-				347E7CCE2021950C00712875 /* UIApplication+SWFBuilder.swift in Sources */,
-				347E7CCC2021950C00712875 /* String+SWFBuilder.swift in Sources */,
-				347E7CCD2021950C00712875 /* UIActivityIndicatorView+SWFBuilder.swift in Sources */,
-				347E7CD82021950C00712875 /* UIImageView+SWFBuilder.swift in Sources */,
-				347E7CD42021950C00712875 /* UIColor+SWFBuilder.swift in Sources */,
-				347E7CC52021950C00712875 /* SFConfig.swift in Sources */,
-				347E7CD12021950C00712875 /* UICollectionViewCell+SWFBuilder.swift in Sources */,
-				347E7CDF2021950C00712875 /* UISegmentedControl+SWFBuilder.swift in Sources */,
-				347E7CE02021950C00712875 /* UISlider+SWFBuilder.swift in Sources */,
-				347E7CDA2021950C00712875 /* UINavigationControllor+SWFBuilder.swift in Sources */,
+				34E47FA02022E575005E855C /* SFConfig.swift in Sources */,
+				34E47FC22022E575005E855C /* UIViewController+SWFBuilder.swift in Sources */,
+				34E47FB42022E575005E855C /* UILabel+SWFBuilder.swift in Sources */,
+				34E47FC02022E575005E855C /* UITextView+SWFBuilder.swift in Sources */,
+				34E47FAB2022E575005E855C /* UICollectionView+SWFBuilder.swift in Sources */,
+				34E47FBA2022E575005E855C /* UISegmentedControl+SWFBuilder.swift in Sources */,
+				34E47FBF2022E575005E855C /* UITextField+SWFBuilder.swift in Sources */,
+				34E47FB02022E575005E855C /* UIDatePicker+SWFBuilder.swift in Sources */,
+				34E47F9A2022E575005E855C /* NSAttributedString+SWFBuilder.swift in Sources */,
+				34E47FA82022E575005E855C /* UIActivityIndicatorView+SWFBuilder.swift in Sources */,
+				34E47FA62022E575005E855C /* SFUtils.swift in Sources */,
+				34E47FBC2022E575005E855C /* UISwitch+SWFBuilder.swift in Sources */,
+				34E47FB62022E575005E855C /* UIPageControl+SWFBuilder.swift in Sources */,
+				34E47F9C2022E575005E855C /* NSMutableAttributedString+SWFBuilder.swift in Sources */,
+				34E47FBB2022E575005E855C /* UISlider+SWFBuilder.swift in Sources */,
+				34E47FBE2022E575005E855C /* UITableViewCell+SWFBuilder.swift in Sources */,
+				34E47F982022E575005E855C /* Dictionary+SWFBuilder.swift in Sources */,
+				34E47FA12022E575005E855C /* SFDefine.swift in Sources */,
+				34E47F972022E575005E855C /* DateFormatter+SWFBuilder.swift in Sources */,
+				34E47FB32022E575005E855C /* UIImageView+SWFBuilder.swift in Sources */,
+				34E47F962022E575005E855C /* Date+SWFBuilder.swift in Sources */,
+				34E47FA32022E575005E855C /* SFMake.swift in Sources */,
+				34E47FC62022E575005E855C /* WKWebView+SWFBuilder.swift in Sources */,
+				34E47FAC2022E575005E855C /* UICollectionViewCell+SWFBuilder.swift in Sources */,
+				34E47F9B2022E575005E855C /* NSMutableArray+SWFBuilder.swift in Sources */,
+				34E47F9E2022E575005E855C /* NSObject+SWFBuilder.swift in Sources */,
+				34E47F9D2022E575005E855C /* NSMutableParagraphStyle+SWFBuilder.swift in Sources */,
+				34E47FC52022E575005E855C /* URL+SWFBuilder.swift in Sources */,
+				34E47FB52022E575005E855C /* UINavigationControllor+SWFBuilder.swift in Sources */,
+				34E47FA92022E575005E855C /* UIApplication+SWFBuilder.swift in Sources */,
+				34E47FA52022E575005E855C /* SFQueue.swift in Sources */,
+				34E47FAD2022E575005E855C /* UICollectionViewFlowLayout+SWFBuilder.swift in Sources */,
 				347E7C5E202194E700712875 /* ViewController.swift in Sources */,
+				34E47FB12022E575005E855C /* UIFont+SWFBuilder.swift in Sources */,
+				34E47FAE2022E575005E855C /* UICollectionViewLayout+SWFBuilder.swift in Sources */,
+				34E47FB22022E575005E855C /* UIImage+SWFBuilder.swift in Sources */,
+				34E47FBD2022E575005E855C /* UITableView+SWFBuilder.swift in Sources */,
+				34E47FAF2022E575005E855C /* UIColor+SWFBuilder.swift in Sources */,
+				34E47FB82022E575005E855C /* UIScrollView+SWFBuilder.swift in Sources */,
+				34E47FB72022E575005E855C /* UIPickerView+SWFBuilder.swift in Sources */,
+				34E47FAA2022E575005E855C /* UIButton+SWFBuilder.swift in Sources */,
+				34E47FA72022E575005E855C /* String+SWFBuilder.swift in Sources */,
+				34E47FA42022E575005E855C /* SFProtocol.swift in Sources */,
 				347E7C5C202194E700712875 /* AppDelegate.swift in Sources */,
-				347E7CBB2021950B00712875 /* Data+SWFBuilder.swift in Sources */,
-				347E7CC82021950C00712875 /* SFMake.swift in Sources */,
-				347E7CCA2021950C00712875 /* SFQueue.swift in Sources */,
-				347E7CCB2021950C00712875 /* SFUtils.swift in Sources */,
-				347E7CBF2021950B00712875 /* NSArray+SWFBuilder.swift in Sources */,
+				34E47FA22022E575005E855C /* SFFunc.swift in Sources */,
+				34E47FC12022E575005E855C /* UIView+SWFBuilder.swift in Sources */,
+				34E47F9F2022E575005E855C /* SFAlert.swift in Sources */,
+				34E47F952022E575005E855C /* Data+SWFBuilder.swift in Sources */,
+				34E47FC42022E575005E855C /* UIWindow+SWFBuilder.swift in Sources */,
+				34E47FB92022E575005E855C /* UISearchBar+SWFBuilder.swift in Sources */,
+				34E47F992022E575005E855C /* NSArray+SWFBuilder.swift in Sources */,
+				34E47FC32022E575005E855C /* UIWebView+SWFBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

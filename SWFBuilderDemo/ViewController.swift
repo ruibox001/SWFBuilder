@@ -13,12 +13,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Label(makeRect(100, 100, 200, 30))
+        _ = Label(makeRect(100, 100, 200, 30))
             .labelFont(fnt(14))
             .labelText("我的内容")
             .labelAlign(NSTextAlignment.center)
             .labelColor(UIColor.red)
             .viewIntoView(self.view)
+        
+        //动画
         
     }
 
