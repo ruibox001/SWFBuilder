@@ -32,7 +32,7 @@ extension NSObject
     
     func objectToJsonString() -> String? {
         do {
-            let data = try JSONSerialization.data(withJSONObject: self, options: JSONSerialization.WritingOptions.sortedKeys)
+            let data = try JSONSerialization.data(withJSONObject: self, options: JSONSerialization.WritingOptions.prettyPrinted)
             return String.init(data: data, encoding: String.Encoding.utf8)
         } catch _ {
             

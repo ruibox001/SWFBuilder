@@ -96,10 +96,5 @@ extension UITextView
         return self
     }
     
-    func textViewContentType(_ type: UITextContentType) -> UITextView {
-        self.textContentType = type
-        return self
-    }
-    
 }
 
