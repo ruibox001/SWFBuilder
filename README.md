@@ -94,3 +94,15 @@ SWFBuilder快速编程组件特点详解
         Swift4在Swift3的基础算的上大改动，主要是把繁琐的语法更加简单化
 
 
+# 安装
+
+###  CocoaPods
+
+        1. 在 `Podfile` 中添加 `pod 'SWFBuilder'`
+        2. 执行 `pod install` 或 `pod update`
+
+### 手动安装
+
+        1. 下载`SWFBuilder`文件夹内的所有内容。
+        2. 将`SWFBuilder`内的源文件添加(拖放)到你的工程。
+
