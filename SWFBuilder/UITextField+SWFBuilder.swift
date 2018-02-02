@@ -30,6 +30,11 @@ extension UITextField
         return self
     }
     
+    func textFieldText(_ text: String?) -> UITextField {
+        self.text = text
+        return self
+    }
+    
     func textFieldAlign(_ align: NSTextAlignment) -> UITextField {
         self.textAlignment = align
         return self

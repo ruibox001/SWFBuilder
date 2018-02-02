@@ -65,7 +65,7 @@ extension UIView
         return self
     }
     
-    func viewcircle(_ borderW: CGFloat, _ radius: CGFloat, _ color: UIColor) -> UIView {
+    func viewCircle(_ borderW: CGFloat, _ radius: CGFloat, _ color: UIColor) -> UIView {
         self.layer.masksToBounds = true
         self.layer.cornerRadius = radius
         self.layer.borderWidth = borderW

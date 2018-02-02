@@ -46,7 +46,7 @@ extension UISwitch
     }
     
     func switchTargetSel(_ target: Any?, _ action: Selector, _ event: UIControlEvents) -> UISwitch {
-        self.addTarget(self, action: action, for: event)
+        self.addTarget(target, action: action, for: event)
         return self
     }
     

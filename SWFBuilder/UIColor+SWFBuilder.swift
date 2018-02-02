@@ -83,6 +83,26 @@ extension UIColor
             return colorWithHex(s,alpha)
         }
         
+        if hex.count == 3 {
+            
+            let rIndex      = hex.index(hex.startIndex, offsetBy: 1)
+            let rString     = hex.prefix(upTo: rIndex)
+            
+            let otherString = hex.suffix(from: rIndex)
+            
+            let gIndex      = otherString.index(otherString.startIndex, offsetBy: 1)
+            let gString     = otherString.prefix(upTo: gIndex)
+            
+            let bIndex      = hex.index(hex.endIndex, offsetBy: -1)
+            let bString     = hex.suffix(from: bIndex)
+            
+            var r:CUnsignedInt  = 0,g:CUnsignedInt = 0 ,b:CUnsignedInt = 0
+            Scanner(string: String("\(rString)\(rString)")).scanHexInt32(&r)
+            Scanner(string: String("\(gString)\(gString)")).scanHexInt32(&g)
+            Scanner(string: String("\(bString)\(bString)")).scanHexInt32(&b)
+            return UIColor(red: CGFloat(r)/255.0, green: CGFloat(g)/255.0, blue: CGFloat(b)/255.0, alpha: alpha)
+        }
+        
         if hex.count != 6 {
             return UIColor.clear
         }
@@ -91,6 +111,7 @@ extension UIColor
         let rString     = hex.prefix(upTo: rIndex)
         
         let otherString = hex.suffix(from: rIndex)
+        
         
         let gIndex      = otherString.index(otherString.startIndex, offsetBy: 2)
         let gString     = otherString.prefix(upTo: gIndex)

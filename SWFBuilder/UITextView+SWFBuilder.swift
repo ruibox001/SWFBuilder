@@ -46,6 +46,11 @@ extension UITextView
         return self
     }
     
+    func textViewText(_ text: String?) -> UITextView {
+        self.text = text
+        return self
+    }
+    
     func textViewAlign(_ align: NSTextAlignment) -> UITextView {
         self.textAlignment = align
         return self

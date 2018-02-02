@@ -14,6 +14,8 @@
 		347E7C66202194E700712875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347E7C64202194E700712875 /* LaunchScreen.storyboard */; };
 		347E7C71202194E700712875 /* SWFBuilderDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C70202194E700712875 /* SWFBuilderDemoTests.swift */; };
 		347E7C7C202194E700712875 /* SWFBuilderDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C7B202194E700712875 /* SWFBuilderDemoUITests.swift */; };
+		34A75D382023FCFA006FCC29 /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A75D362023FCF9006FCC29 /* back@3x.png */; };
+		34A75D392023FCFA006FCC29 /* xxx@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A75D372023FCF9006FCC29 /* xxx@3x.png */; };
 		34E47F952022E575005E855C /* Data+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F632022E575005E855C /* Data+SWFBuilder.swift */; };
 		34E47F962022E575005E855C /* Date+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F642022E575005E855C /* Date+SWFBuilder.swift */; };
 		34E47F972022E575005E855C /* DateFormatter+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F652022E575005E855C /* DateFormatter+SWFBuilder.swift */; };
@@ -97,6 +99,8 @@
 		347E7C77202194E700712875 /* SWFBuilderDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWFBuilderDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		347E7C7B202194E700712875 /* SWFBuilderDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFBuilderDemoUITests.swift; sourceTree = "<group>"; };
 		347E7C7D202194E700712875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34A75D362023FCF9006FCC29 /* back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@3x.png"; sourceTree = "<group>"; };
+		34A75D372023FCF9006FCC29 /* xxx@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xxx@3x.png"; sourceTree = "<group>"; };
 		34E47F632022E575005E855C /* Data+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+SWFBuilder.swift"; sourceTree = "<group>"; };
 		34E47F642022E575005E855C /* Date+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+SWFBuilder.swift"; sourceTree = "<group>"; };
 		34E47F652022E575005E855C /* DateFormatter+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+SWFBuilder.swift"; sourceTree = "<group>"; };
@@ -198,6 +202,7 @@
 		347E7C5A202194E700712875 /* SWFBuilderDemo */ = {
 			isa = PBXGroup;
 			children = (
+				34A75D352023FCF9006FCC29 /* resource */,
 				347E7C5B202194E700712875 /* AppDelegate.swift */,
 				347E7C5D202194E700712875 /* ViewController.swift */,
 				347E7C5F202194E700712875 /* Main.storyboard */,
@@ -224,6 +229,15 @@
 				347E7C7D202194E700712875 /* Info.plist */,
 			);
 			path = SWFBuilderDemoUITests;
+			sourceTree = "<group>";
+		};
+		34A75D352023FCF9006FCC29 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				34A75D362023FCF9006FCC29 /* back@3x.png */,
+				34A75D372023FCF9006FCC29 /* xxx@3x.png */,
+			);
+			path = resource;
 			sourceTree = "<group>";
 		};
 		34E47F622022E575005E855C /* SWFBuilder */ = {
@@ -391,7 +405,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				347E7C66202194E700712875 /* LaunchScreen.storyboard in Resources */,
+				34A75D392023FCFA006FCC29 /* xxx@3x.png in Resources */,
 				347E7C63202194E700712875 /* Assets.xcassets in Resources */,
+				34A75D382023FCFA006FCC29 /* back@3x.png in Resources */,
 				347E7C61202194E700712875 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
