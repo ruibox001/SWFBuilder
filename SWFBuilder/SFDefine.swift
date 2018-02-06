@@ -13,6 +13,9 @@ import UIKit
 let phoneWidth = UIScreen.main.bounds.size.width
 let phoneHeight = UIScreen.main.bounds.size.height
 
+let naviHeight: CGFloat  = 64
+let tabHeight: CGFloat  = 49
+
 let appVersion:String = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
 let phoneIdentifier = UIDevice.current.identifierForVendor?.uuidString
 let phoneVersion  = UIDevice.current.systemVersion

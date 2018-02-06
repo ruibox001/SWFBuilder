@@ -64,7 +64,7 @@ class ViewController: UIViewController {
         let btn = Btn(UIButtonType.custom)
             .btnFont(fnt(14))
             .btnNorTitleColor(color("000"))
-            .btnNorTitle("按钮")
+            .btnNorTitle("WKWebView")
             .btnAlign(.center)
             .btnClick(self, #selector(clickBtn(sender:)))
             .viewBgColor(color("ccc"))
@@ -76,7 +76,6 @@ class ViewController: UIViewController {
             .btnNorTitleColor(color("000"))
             .btnNorTitle("圆角按钮")
             .btnAlign(.center)
-            .btnClick(self, #selector(clickBtn(sender:)))
             .viewBgColor(color("ccc"))
             .viewFrame(makeRect(100, btn.bottom()+yOffset, phoneWidth-200, 40))
             .viewIntoView(self.view)
@@ -150,6 +149,7 @@ class ViewController: UIViewController {
     
     @objc func clickBtn(sender: UIButton) {
         Dlog("click \(sender)")
+        self.navigationController?.pushViewController(WKWebViewController(), animated: true)
     }
     
     //选择点击后的事件

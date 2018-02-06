@@ -64,8 +64,36 @@ extension String
         return -1
     }
     
-    func strToURL() -> NSURL? {
-        return NSURL.init(string: self)
+    func strToNSURL() -> NSURL? {
+        return NSURL(string: self)
+    }
+    
+    func strToURL() -> URL? {
+        return URL(string: self)
+    }
+    
+    func strToNSRequest() -> NSURLRequest? {
+        return NSURLRequest(url: self.strToURL()!)
+    }
+    
+    func strToNSRequest(_ cachePolicy: NSURLRequest.CachePolicy) -> NSURLRequest? {
+        return NSURLRequest.init(url: self.strToURL()!, cachePolicy: cachePolicy, timeoutInterval: 30)
+    }
+    
+    func strToNSRequest(_ cachePolicy: NSURLRequest.CachePolicy, _ timeOut: TimeInterval) -> NSURLRequest? {
+        return NSURLRequest.init(url: self.strToURL()!, cachePolicy: cachePolicy, timeoutInterval: timeOut)
+    }
+    
+    func strToRequest() -> URLRequest? {
+        return URLRequest(url: self.strToURL()!)
+    }
+    
+    func strToRequest(_ cachePolicy: NSURLRequest.CachePolicy) -> URLRequest? {
+        return URLRequest.init(url: self.strToURL()!, cachePolicy: cachePolicy, timeoutInterval: 30)
+    }
+    
+    func strToRequest(_ cachePolicy: NSURLRequest.CachePolicy, _ timeOut: TimeInterval) -> URLRequest? {
+        return URLRequest.init(url: self.strToURL()!, cachePolicy: cachePolicy, timeoutInterval: timeOut)
     }
     
     func strToImage() -> UIImage {

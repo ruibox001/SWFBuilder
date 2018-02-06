@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		345FF13820293CF90024130B /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345FF13720293CF90024130B /* WKWebViewController.swift */; };
+		345FF13A20293E5B0024130B /* URLRequest+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345FF13920293E5B0024130B /* URLRequest+SWFBuilder.swift */; };
 		347E7C5C202194E700712875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C5B202194E700712875 /* AppDelegate.swift */; };
 		347E7C5E202194E700712875 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C5D202194E700712875 /* ViewController.swift */; };
 		347E7C61202194E700712875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347E7C5F202194E700712875 /* Main.storyboard */; };
@@ -86,6 +88,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		345FF13720293CF90024130B /* WKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
+		345FF13920293E5B0024130B /* URLRequest+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+SWFBuilder.swift"; sourceTree = "<group>"; };
 		347E7C58202194E700712875 /* SWFBuilderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWFBuilderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		347E7C5B202194E700712875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		347E7C5D202194E700712875 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +209,7 @@
 				34A75D352023FCF9006FCC29 /* resource */,
 				347E7C5B202194E700712875 /* AppDelegate.swift */,
 				347E7C5D202194E700712875 /* ViewController.swift */,
+				345FF13720293CF90024130B /* WKWebViewController.swift */,
 				347E7C5F202194E700712875 /* Main.storyboard */,
 				347E7C62202194E700712875 /* Assets.xcassets */,
 				347E7C64202194E700712875 /* LaunchScreen.storyboard */,
@@ -292,6 +297,7 @@
 				34E47F912022E575005E855C /* UIWebView+SWFBuilder.swift */,
 				34E47F922022E575005E855C /* UIWindow+SWFBuilder.swift */,
 				34E47F932022E575005E855C /* URL+SWFBuilder.swift */,
+				345FF13920293E5B0024130B /* URLRequest+SWFBuilder.swift */,
 				34E47F942022E575005E855C /* WKWebView+SWFBuilder.swift */,
 			);
 			path = SWFBuilder;
@@ -439,6 +445,7 @@
 				34E47FC02022E575005E855C /* UITextView+SWFBuilder.swift in Sources */,
 				34E47FAB2022E575005E855C /* UICollectionView+SWFBuilder.swift in Sources */,
 				34E47FBA2022E575005E855C /* UISegmentedControl+SWFBuilder.swift in Sources */,
+				345FF13820293CF90024130B /* WKWebViewController.swift in Sources */,
 				34E47FBF2022E575005E855C /* UITextField+SWFBuilder.swift in Sources */,
 				34E47FB02022E575005E855C /* UIDatePicker+SWFBuilder.swift in Sources */,
 				34E47F9A2022E575005E855C /* NSAttributedString+SWFBuilder.swift in Sources */,
@@ -454,6 +461,7 @@
 				34E47F972022E575005E855C /* DateFormatter+SWFBuilder.swift in Sources */,
 				34E47FB32022E575005E855C /* UIImageView+SWFBuilder.swift in Sources */,
 				34E47F962022E575005E855C /* Date+SWFBuilder.swift in Sources */,
+				345FF13A20293E5B0024130B /* URLRequest+SWFBuilder.swift in Sources */,
 				34E47FA32022E575005E855C /* SFMake.swift in Sources */,
 				34E47FC62022E575005E855C /* WKWebView+SWFBuilder.swift in Sources */,
 				34E47FAC2022E575005E855C /* UICollectionViewCell+SWFBuilder.swift in Sources */,
