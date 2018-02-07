@@ -18,6 +18,7 @@
 		347E7C7C202194E700712875 /* SWFBuilderDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C7B202194E700712875 /* SWFBuilderDemoUITests.swift */; };
 		34A75D382023FCFA006FCC29 /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A75D362023FCF9006FCC29 /* back@3x.png */; };
 		34A75D392023FCFA006FCC29 /* xxx@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A75D372023FCF9006FCC29 /* xxx@3x.png */; };
+		34B6F84A202AF8D100CCCB7A /* CGRect+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B6F849202AF8D000CCCB7A /* CGRect+SWFBuilder.swift */; };
 		34E47F952022E575005E855C /* Data+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F632022E575005E855C /* Data+SWFBuilder.swift */; };
 		34E47F962022E575005E855C /* Date+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F642022E575005E855C /* Date+SWFBuilder.swift */; };
 		34E47F972022E575005E855C /* DateFormatter+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E47F652022E575005E855C /* DateFormatter+SWFBuilder.swift */; };
@@ -105,6 +106,7 @@
 		347E7C7D202194E700712875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34A75D362023FCF9006FCC29 /* back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@3x.png"; sourceTree = "<group>"; };
 		34A75D372023FCF9006FCC29 /* xxx@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xxx@3x.png"; sourceTree = "<group>"; };
+		34B6F849202AF8D000CCCB7A /* CGRect+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+SWFBuilder.swift"; sourceTree = "<group>"; };
 		34E47F632022E575005E855C /* Data+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+SWFBuilder.swift"; sourceTree = "<group>"; };
 		34E47F642022E575005E855C /* Date+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+SWFBuilder.swift"; sourceTree = "<group>"; };
 		34E47F652022E575005E855C /* DateFormatter+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+SWFBuilder.swift"; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 				34E47F6A2022E575005E855C /* NSMutableAttributedString+SWFBuilder.swift */,
 				34E47F6B2022E575005E855C /* NSMutableParagraphStyle+SWFBuilder.swift */,
 				34E47F6C2022E575005E855C /* NSObject+SWFBuilder.swift */,
+				34B6F849202AF8D000CCCB7A /* CGRect+SWFBuilder.swift */,
 				34E47F6D2022E575005E855C /* SFAlert.swift */,
 				34E47F6E2022E575005E855C /* SFConfig.swift */,
 				34E47F6F2022E575005E855C /* SFDefine.swift */,
@@ -479,6 +482,7 @@
 				34E47FB22022E575005E855C /* UIImage+SWFBuilder.swift in Sources */,
 				34E47FBD2022E575005E855C /* UITableView+SWFBuilder.swift in Sources */,
 				34E47FAF2022E575005E855C /* UIColor+SWFBuilder.swift in Sources */,
+				34B6F84A202AF8D100CCCB7A /* CGRect+SWFBuilder.swift in Sources */,
 				34E47FB82022E575005E855C /* UIScrollView+SWFBuilder.swift in Sources */,
 				34E47FB72022E575005E855C /* UIPickerView+SWFBuilder.swift in Sources */,
 				34E47FAA2022E575005E855C /* UIButton+SWFBuilder.swift in Sources */,

@@ -172,6 +172,7 @@ public class JsMethodControl : NSObject, WKScriptMessageHandler {
                 return
             }
         }
+        
     }
     
 }
@@ -251,5 +252,6 @@ public class WebViewProgress: NSObject {
             }
         }
     }
+    
 }
 
