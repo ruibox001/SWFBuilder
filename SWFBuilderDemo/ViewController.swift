@@ -149,7 +149,7 @@ class ViewController: UIViewController {
     
     @objc func clickBtn(sender: UIButton) {
         Dlog("click \(sender)")
-        self.navigationController?.pushViewController(WKWebViewController(), animated: true)
+        self.navigationController?.pushViewController(WKWebViewController("https://www.baidu.com"), animated: true)
     }
     
     //选择点击后的事件

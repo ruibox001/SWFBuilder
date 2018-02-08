@@ -13,6 +13,7 @@ import WebKit
 public class WKWebViewController: UIViewController, WKNavigationDelegate,WKUIDelegate {
     
     var webView: WKWebView?
+    var urlString: String?
     
     private lazy var userController: WKUserContentController = {
         let u: WKUserContentController = WKUserContentController()
@@ -24,6 +25,11 @@ public class WKWebViewController: UIViewController, WKNavigationDelegate,WKUIDel
         let jsController: JsMethodControl = JsMethodControl(self.userController)
         return jsController
     }()
+    
+    convenience init(_ url: String) {
+        self.init(nibName: nil, bundle: nil)
+        self.urlString = url
+    }
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,14 +44,13 @@ public class WKWebViewController: UIViewController, WKNavigationDelegate,WKUIDel
         self.webView = WKWeb(self.view.bounds, config)
             .wkWebDelegate(self)
             .wkWebNaviDelegate(self)
-            .wkWebLoadUrlStr("https://baidu.com")
+            .wkWebLoadUrlStr(self.urlString!)
             .viewIntoView(self.view) as? WKWebView
         
         self.webView?.wkWebAddObserverProgress(64, nil)
         
-        self.webView?.wkWebAddObserverTitleChange({ (keyPath: String?, newVal: Any?) in
-            Dlog("title > \(String(describing: keyPath)) >> \(String(describing: newVal))")
-            self.addTitle(title: newVal as! String)
+        self.webView?.wkWebAddObserverTitleChange({ [weak self] (keyPath: String?, newVal: Any?) in
+            self?.addTitle(title: newVal as! String)
         })
     }
     
@@ -70,8 +75,14 @@ public class WKWebViewController: UIViewController, WKNavigationDelegate,WKUIDel
         Dlog("webView > finish")
     }
     
-    public func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        Dlog("webView > error: \(error)")
+    public func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        //当第一次启动App时会询问是否允许，这里是同意后刷新，防止出现空白界面
+        let err: NSError? = error as NSError
+        if err?.code == -1009 {
+            DoInMainAfter(2, { [weak self] in
+                self?.webView?.load((self?.urlString?.strToRequest())!)
+            })
+        }
     }
     
     deinit {

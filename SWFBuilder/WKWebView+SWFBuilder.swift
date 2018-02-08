@@ -90,6 +90,10 @@ extension WKWebView
         getWebProgress().addProgressObserver(self,offsetY, block)
     }
     
+    func wkWebFinishProgress() {
+        getWebProgress().finishProgress()
+    }
+    
     func wkWebAddObserverTitleChange(_ block: WebViewProgress.ProgressBlock?) {
         getWebProgress().addTitleObserver(self, block)
     }
@@ -201,7 +205,7 @@ public class WebViewProgress: NSObject {
     
     private lazy var progressColorLayer: CAGradientLayer = {
         let layer: CAGradientLayer = CAGradientLayer()
-        layer.frame = makeRect(0, 80, phoneWidth*0.05, 4)
+        layer.frame = makeRect(0, 0, phoneWidth*0.05, 4)
         layer.startPoint = makePoint(0, 1)
         layer.endPoint = makePoint(1, 1)
         let c: UIColor = color("10E010")
@@ -213,9 +217,12 @@ public class WebViewProgress: NSObject {
         self.pBlock = block
         web.addObserver(self, forKeyPath: WebViewProgress.ProgressKey, options: NSKeyValueObservingOptions.new, context: nil)
         web.layer.addSublayer(self.progressColorLayer)
-        var f = self.progressColorLayer.frame
-        f.origin.y = offsetY
-        self.progressColorLayer.frame = f;
+        self.progressColorLayer.frame = self.progressColorLayer.frame.rectSetY(offsetY);
+    }
+    
+    func finishProgress() {
+        _ = self.progressColorLayer.frame.rectSetW(0)
+        self.progressColorLayer.isHidden = true
     }
     
     func addTitleObserver(_ web: WKWebView, _ block: ProgressBlock?) {
@@ -225,7 +232,6 @@ public class WebViewProgress: NSObject {
     
     public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         
-        Dlog("keypath: \(String(describing: keyPath))")
         let any: Any = change![NSKeyValueChangeKey.newKey]!
         
         if keyPath == WebViewProgress.ProgressKey {
@@ -242,9 +248,7 @@ public class WebViewProgress: NSObject {
                 progress = 0.05
             }
             self.progressColorLayer.isHidden = false
-            var f: CGRect = self.progressColorLayer.frame
-            f.size.width = phoneWidth * progress
-            self.progressColorLayer.frame = f
+            self.progressColorLayer.frame = self.progressColorLayer.frame.rectSetW(phoneWidth * progress)
         }
         else if keyPath == WebViewProgress.TitleKey {
             if self.tBlock != nil {

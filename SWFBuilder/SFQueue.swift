@@ -15,8 +15,16 @@ func DoInSerial(_ block: @escaping ()->Void) {
     queue.async(execute: block)
 }
 
+func DoInSerialAfter(_ sec: TimeInterval, _ block: @escaping ()->Void) {
+    queue.asyncAfter(deadline: DispatchTime.now() + sec, execute: block)
+}
+
 func DoInConcurrent(_ block: @escaping ()->Void) {
     DispatchQueue.global().async(execute: block)
+}
+
+func DoInConcurrentAfter(_ sec: TimeInterval, _ block: @escaping ()->Void) {
+    DispatchQueue.global().asyncAfter(deadline: DispatchTime.now() + sec, execute: block)
 }
 
 func DoInMain(_ block: @escaping ()->Void) {
