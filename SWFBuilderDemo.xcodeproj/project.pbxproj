@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34204648202D3D900006FB3F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34204647202D3D900006FB3F /* TableViewController.swift */; };
+		3420464A202D46690006FB3F /* empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34204649202D46690006FB3F /* empty@2x.png */; };
+		3420464C202D858E0006FB3F /* AppDelegate+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420464B202D858D0006FB3F /* AppDelegate+SWFBuilder.swift */; };
+		3420464E202D8ECC0006FB3F /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3420464D202D8ECC0006FB3F /* 1.wav */; };
 		345FF13820293CF90024130B /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345FF13720293CF90024130B /* WKWebViewController.swift */; };
 		345FF13A20293E5B0024130B /* URLRequest+SWFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345FF13920293E5B0024130B /* URLRequest+SWFBuilder.swift */; };
 		347E7C5C202194E700712875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E7C5B202194E700712875 /* AppDelegate.swift */; };
@@ -89,6 +93,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		34204647202D3D900006FB3F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		34204649202D46690006FB3F /* empty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empty@2x.png"; sourceTree = "<group>"; };
+		3420464B202D858D0006FB3F /* AppDelegate+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+SWFBuilder.swift"; sourceTree = "<group>"; };
+		3420464D202D8ECC0006FB3F /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1.wav; sourceTree = "<group>"; };
 		345FF13720293CF90024130B /* WKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
 		345FF13920293E5B0024130B /* URLRequest+SWFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+SWFBuilder.swift"; sourceTree = "<group>"; };
 		347E7C58202194E700712875 /* SWFBuilderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWFBuilderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +220,7 @@
 				347E7C5B202194E700712875 /* AppDelegate.swift */,
 				347E7C5D202194E700712875 /* ViewController.swift */,
 				345FF13720293CF90024130B /* WKWebViewController.swift */,
+				34204647202D3D900006FB3F /* TableViewController.swift */,
 				347E7C5F202194E700712875 /* Main.storyboard */,
 				347E7C62202194E700712875 /* Assets.xcassets */,
 				347E7C64202194E700712875 /* LaunchScreen.storyboard */,
@@ -241,8 +250,10 @@
 		34A75D352023FCF9006FCC29 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				3420464D202D8ECC0006FB3F /* 1.wav */,
 				34A75D362023FCF9006FCC29 /* back@3x.png */,
 				34A75D372023FCF9006FCC29 /* xxx@3x.png */,
+				34204649202D46690006FB3F /* empty@2x.png */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -270,6 +281,7 @@
 				34E47F732022E575005E855C /* SFQueue.swift */,
 				34E47F742022E575005E855C /* SFUtils.swift */,
 				34E47F752022E575005E855C /* String+SWFBuilder.swift */,
+				3420464B202D858D0006FB3F /* AppDelegate+SWFBuilder.swift */,
 				34E47F762022E575005E855C /* UIActivityIndicatorView+SWFBuilder.swift */,
 				34E47F772022E575005E855C /* UIApplication+SWFBuilder.swift */,
 				34E47F782022E575005E855C /* UIButton+SWFBuilder.swift */,
@@ -375,6 +387,11 @@
 					347E7C57202194E700712875 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					347E7C6B202194E700712875 = {
 						CreatedOnToolsVersion = 9.2;
@@ -414,9 +431,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				347E7C66202194E700712875 /* LaunchScreen.storyboard in Resources */,
+				3420464E202D8ECC0006FB3F /* 1.wav in Resources */,
 				34A75D392023FCFA006FCC29 /* xxx@3x.png in Resources */,
 				347E7C63202194E700712875 /* Assets.xcassets in Resources */,
 				34A75D382023FCFA006FCC29 /* back@3x.png in Resources */,
+				3420464A202D46690006FB3F /* empty@2x.png in Resources */,
 				347E7C61202194E700712875 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +503,7 @@
 				34E47FAF2022E575005E855C /* UIColor+SWFBuilder.swift in Sources */,
 				34B6F84A202AF8D100CCCB7A /* CGRect+SWFBuilder.swift in Sources */,
 				34E47FB82022E575005E855C /* UIScrollView+SWFBuilder.swift in Sources */,
+				34204648202D3D900006FB3F /* TableViewController.swift in Sources */,
 				34E47FB72022E575005E855C /* UIPickerView+SWFBuilder.swift in Sources */,
 				34E47FAA2022E575005E855C /* UIButton+SWFBuilder.swift in Sources */,
 				34E47FA72022E575005E855C /* String+SWFBuilder.swift in Sources */,
@@ -495,6 +515,7 @@
 				34E47F952022E575005E855C /* Data+SWFBuilder.swift in Sources */,
 				34E47FC42022E575005E855C /* UIWindow+SWFBuilder.swift in Sources */,
 				34E47FB92022E575005E855C /* UISearchBar+SWFBuilder.swift in Sources */,
+				3420464C202D858E0006FB3F /* AppDelegate+SWFBuilder.swift in Sources */,
 				34E47F992022E575005E855C /* NSArray+SWFBuilder.swift in Sources */,
 				34E47FC32022E575005E855C /* UIWebView+SWFBuilder.swift in Sources */,
 			);
@@ -667,7 +688,7 @@
 				INFOPLIST_FILE = SWFBuilderDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.anody.swifffffffff;
+				PRODUCT_BUNDLE_IDENTIFIER = org.anody.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -683,7 +704,7 @@
 				INFOPLIST_FILE = SWFBuilderDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.anody.swifffffffff;
+				PRODUCT_BUNDLE_IDENTIFIER = org.anody.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

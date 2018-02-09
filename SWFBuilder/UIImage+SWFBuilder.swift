@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-let imagePlaceHolderImage: UIImage = "placeholder".strToImage()
+let imagePlaceHolderImage: UIImage = DF_UIImagePlaceHolderImage!
 
 func imageWithName(_ name: String) -> UIImage? {
     return name.strToImage()
@@ -24,6 +24,14 @@ extension UIImage
     
     func imageSize() -> CGSize {
         return self.size
+    }
+    
+    func imageW() -> CGFloat {
+        return self.size.width
+    }
+    
+    func imageH() -> CGFloat {
+        return self.size.height
     }
     
     func imageScaleWidth(_ scaleHeight: CGFloat) -> CGFloat {

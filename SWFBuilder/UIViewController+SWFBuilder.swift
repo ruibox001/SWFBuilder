@@ -10,10 +10,10 @@ import Foundation
 import UIKit
 
 //配置默认项
-let navigationBackImage = "back"
-let navigationFontSize: CGFloat = 18.0
-let navigationLeftRightFontSize: CGFloat = 14
-let navigationdefaultColor = UIColor.black
+let navigationBackImage = DF_NavigationBackImageName
+let navigationFontSize: CGFloat = DF_NavigationTitleFontSize
+let navigationLeftRightFontSize: CGFloat = DF_NavigationLeftRightFontSize
+let navigationdefaultColor = DF_NavigationLeftRightLabelColor
 
 
 public typealias mblock = ((_ v: UIView)->Void)?

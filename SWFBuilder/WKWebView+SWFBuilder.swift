@@ -208,7 +208,7 @@ public class WebViewProgress: NSObject {
         layer.frame = makeRect(0, 0, phoneWidth*0.05, 4)
         layer.startPoint = makePoint(0, 1)
         layer.endPoint = makePoint(1, 1)
-        let c: UIColor = color("10E010")
+        let c: UIColor = DF_WebViewLoadProgressColor
         layer.colors = [c.cgColor, c.colorAlpha(0.1).cgColor]
         return layer
     }()

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 //配置默认字体，无配置是设置为""
-private let myFontName = ""; //"Zapfino"
+private let myFontName = DF_MyCustomFontName; //"Zapfino"
 
 //标准系统字体
 func fnt(_ font: CGFloat) -> UIFont {

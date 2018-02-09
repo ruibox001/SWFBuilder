@@ -69,16 +69,19 @@ class ViewController: UIViewController {
             .btnClick(self, #selector(clickBtn(sender:)))
             .viewBgColor(color("ccc"))
             .viewFrame(makeRect(100, seg.bottom()+yOffset, phoneWidth-200, 40))
+            .viewTag(0)
             .viewIntoView(self.view)
         
         let btn1 = Btn(UIButtonType.custom)
             .btnFont(fnt(14))
             .btnNorTitleColor(color("000"))
-            .btnNorTitle("圆角按钮")
+            .btnNorTitle("TableView")
+            .btnClick(self, #selector(clickBtn(sender:)))
             .btnAlign(.center)
             .viewBgColor(color("ccc"))
             .viewFrame(makeRect(100, btn.bottom()+yOffset, phoneWidth-200, 40))
             .viewIntoView(self.view)
+            .viewTag(1)
             .viewCircle(1, 6, UIColor.brown)
         
         //富文本
@@ -149,7 +152,12 @@ class ViewController: UIViewController {
     
     @objc func clickBtn(sender: UIButton) {
         Dlog("click \(sender)")
-        self.navigationController?.pushViewController(WKWebViewController("https://www.baidu.com"), animated: true)
+        if sender.tag == 0 {
+            self.navigationController?.pushViewController(WKWebViewController("https://www.baidu.com"), animated: true)
+        }
+        else if sender.tag == 1 {
+            self.navigationController?.pushViewController(TableViewController(), animated: true)
+        }
     }
     
     //选择点击后的事件

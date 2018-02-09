@@ -169,6 +169,13 @@ extension String
         return (scan.scanFloat(UnsafeMutablePointer(&float)) && scan.isAtEnd)
     }
     
+    func strIsEmpty() -> Bool {
+        if self.count == 0 {
+            return true
+        }
+        return false
+    }
+    
     func strIsInt() -> Bool {
         let scan: Scanner = Scanner.init(string: self)
         var int: Int = 0

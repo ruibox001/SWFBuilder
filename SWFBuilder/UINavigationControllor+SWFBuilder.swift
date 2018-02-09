@@ -18,12 +18,11 @@ extension UINavigationController
     
     @objc func cus_pushViewController(_ viewController: UIViewController, animated: Bool){
         if self.viewControllers.count > 0 {
-            viewController.hidesBottomBarWhenPushed = true
+            viewController.hidesBottomBarWhenPushed = true //这个方便隐藏导航栏
+            self.interactivePopGestureRecognizer?.delegate = self as? UIGestureRecognizerDelegate //左滑返回手势
         }
         self.cus_pushViewController(viewController, animated: animated)
     }
-    
-    
     
     func naviBgImage(_ image: UIImage) -> UINavigationController {
         self.navigationBar .setBackgroundImage(image, for: UIBarMetrics.default)

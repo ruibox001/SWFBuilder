@@ -109,5 +109,161 @@ extension UITableView
     }
     
     
+    /*********************** 无数据的界面提示 ********************/
+    
+    private var nodata: TableViewNoData? {
+        get {
+            return objc_getAssociatedObject(self, &TableViewNoData.Key) as? TableViewNoData
+        }
+        set {
+            if let newValue = newValue  {
+                objc_setAssociatedObject(self, &TableViewNoData.Key, newValue as TableViewNoData?, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            }
+        }
+    }
+    
+    private func getNoDataView() -> TableViewNoData {
+        if self.nodata == nil {
+            self.nodata = TableViewNoData();
+        }
+        return self.nodata!;
+    }
+    
+    open static func initializes() {
+        self.objSwizzlingOrReplaceMethod(originSelector: #selector(reloadData), newSelector: #selector(cus_reloadData))
+    }
+    
+    @objc private func cus_reloadData(){
+        if self.nodata == nil {   //没有启动
+            self.cus_reloadData()
+            return
+        }
+        
+        if !self.getNoDataView().showWhenCreate {
+            self.getNoDataView().showWhenCreate = true
+        }
+        else {
+            let show = shouldShowNoDataView(self.getNoDataView().ignoreHeaderFooter)
+            self.getNoDataView().nodataViewNeedShow(show)
+        }
+        self.cus_reloadData()
+    }
+    
+    private func shouldShowNoDataView(_ ignoreHeaderFooter: Bool) -> Bool {
+        
+        let delegate: UITableViewDelegate? = self.delegate
+        let src: UITableViewDataSource? = self.dataSource
+        var sections = 1
+        
+        if (src?.responds(to: #selector(UITableViewDataSource.numberOfSections(in:))))! {
+            sections = (src?.numberOfSections!(in: self))!
+        }
+        
+        if (!ignoreHeaderFooter) {
+            
+            if self.tableHeaderView != nil {
+                let n: String? = className(self.tableHeaderView!)
+                if (n != nil && n != TableViewNoData.TableViewIgnoreHeaderFooterViewName) {
+                    return false
+                }
+            }
+            
+            if self.tableFooterView != nil {
+                let n: String? = className(self.tableFooterView!)
+                if (n != nil && n != TableViewNoData.TableViewIgnoreHeaderFooterViewName) {
+                    return false
+                }
+            }
+        }
+        
+        for i in 0...(sections-1) {
+            
+            if (!ignoreHeaderFooter) {
+                
+                if (delegate?.responds(to: #selector(UITableViewDelegate.tableView(_:viewForHeaderInSection:))))! {
+                    if ((delegate?.tableView!(self, viewForHeaderInSection: i)) != nil) {
+                        return false
+                    }
+                }
+                
+                if (delegate?.responds(to: #selector(UITableViewDelegate.tableView(_:viewForFooterInSection:))))! {
+                    if ((delegate?.tableView!(self, viewForFooterInSection: i)) != nil) {
+                        return false
+                    }
+                }
+                
+            }
+            
+            let num: Int = (src?.tableView(self, numberOfRowsInSection: i))!
+            if num > 0 {
+                return false
+            }
+        }
+        return true
+    }
+    
+    func tableViewAddNoData(_ image: UIImage?, _ offsetY: CGFloat, _ ignoreHeaderFooter: Bool, _ showWhenCreate: Bool, _ clickBlock: TableViewNoData.NoDataBlock?) {
+        self.getNoDataView().addNoData(self,image,offsetY,ignoreHeaderFooter,showWhenCreate,clickBlock)
+    }
+    
+    func tableViewSetNoDataImageWidth(_ width: CGFloat) {
+        if self.nodata != nil {
+            self.getNoDataView().tableViewSetNoDataImageWidth(width)
+        }
+    }
+    
+}
+
+public class TableViewNoData: NSObject {
+    
+    public static var Key = "TableViewNoDataKey";
+    public static var TableViewIgnoreHeaderFooterViewName = "UIView"
+    private let img = DF_TableViewNoDataImage
+    
+    public typealias NoDataBlock = ( (_ view: UIView)->Void )
+    
+    private var table: UITableView?
+    private var image: UIImage?
+    private var offsetY: CGFloat = 0
+    var ignoreHeaderFooter: Bool = false
+    var showWhenCreate: Bool = false
+    private var cBlock: NoDataBlock?
+    
+    private lazy var imgView: UIImageView = {
+        let i = UIImageView();
+        return i
+    }()
+    
+    func addNoData(_ table: UITableView, _ image: UIImage?, _ offsetY: CGFloat, _ ignoreHeaderFooter: Bool, _ showWhenCreate: Bool, _ clickBlock: TableViewNoData.NoDataBlock?) {
+        self.table = table
+        self.image = image
+        if self.image == nil {
+            self.image = img
+        }
+        self.offsetY = offsetY
+        self.ignoreHeaderFooter = ignoreHeaderFooter
+        self.showWhenCreate = showWhenCreate
+        self.cBlock = clickBlock
+        
+        self.imgView.image = self.image
+        self.imgView.frame = makeRect(((table.frame.rectW()) - (self.image?.imageW())!)*0.5, ((table.frame.rectH())-(self.image?.imageH())!)*0.5+offsetY, (self.image?.imageW())!, (self.image?.imageH())!)
+        table.addSubview(self.imgView.viewClick(self, #selector(clickImage)).viewIsHidden(true))
+    }
+    
+    func nodataViewNeedShow(_ show: Bool) {
+        self.imgView.isHidden = !show
+    }
+    
+    func tableViewSetNoDataImageWidth(_ w: CGFloat) {
+        let size: CGSize = makeSize(w, (self.image?.imageScaleHeight(w))!)
+        self.imgView.frame = makeRect(((self.table?.frame.rectW())! - size.width)*0.5, ((self.table?.frame.rectH())!-size.height)*0.5+offsetY, size.width, size.height)
+    }
+    
+    @objc private func clickImage() {
+        if self.cBlock != nil {
+            self.cBlock!(self.imgView)
+        }
+    }
+    
 }
 
