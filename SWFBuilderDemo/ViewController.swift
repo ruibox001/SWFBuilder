@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WebKit
 
 class ViewController: UIViewController {
 
@@ -139,7 +140,7 @@ class ViewController: UIViewController {
             Dlog("子线程并发: \(Thread.current)")
         }
         
-        DoInConcurrent {
+        DoInSerial {
             Dlog("子线程串行 \(Thread.current)")
         }
         
@@ -153,7 +154,21 @@ class ViewController: UIViewController {
     @objc func clickBtn(sender: UIButton) {
         Dlog("click \(sender)")
         if sender.tag == 0 {
-            self.navigationController?.pushViewController(WKWebViewController("https://www.baidu.com"), animated: true)
+
+            let wkwebs = WKWebViewController.init(url: "https://www.baidu.com",
+            startBlock: { (webView: WKWebView) in
+                Dlog("start block doing")
+            }, endBlock: { (webView: WKWebView) in
+                Dlog("end block doing")
+            }, errorBlock: { (error: Error) in
+                Dlog("error block doing")
+            },jsRegisterBlock: { (userContentController: WKUserContentController) in
+                Dlog("js register doing")
+                userContentController.userContentControllerAddJsMethod("alert", { (any: Any) in
+                    Dlog("js block doing")
+                })
+            })
+            self.navigationController?.pushViewController(wkwebs, animated: true)
         }
         else if sender.tag == 1 {
             self.navigationController?.pushViewController(TableViewController(), animated: true)

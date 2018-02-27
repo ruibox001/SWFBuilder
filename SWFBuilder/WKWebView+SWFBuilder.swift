@@ -87,7 +87,11 @@ extension WKWebView
     }
     
     func wkWebAddObserverProgress(_ offsetY: CGFloat, _ block: WebViewProgress.ProgressBlock? ) {
-        getWebProgress().addProgressObserver(self,offsetY, block)
+        getWebProgress().addProgressObserver(self,offsetY,nil, block)
+    }
+    
+    func wkWebAddObserverProgress(_ offsetY: CGFloat, _ progressBgColor: UIColor, _ block: WebViewProgress.ProgressBlock? ) {
+        getWebProgress().addProgressObserver(self,offsetY,progressBgColor, block)
     }
     
     func wkWebFinishProgress() {
@@ -96,99 +100,6 @@ extension WKWebView
     
     func wkWebAddObserverTitleChange(_ block: WebViewProgress.ProgressBlock?) {
         getWebProgress().addTitleObserver(self, block)
-    }
-    
-    
-    /****************<Js>****************/
-    private var js: JsMethodControl? {
-        get {
-            return objc_getAssociatedObject(self, &JsMethodControl.Key) as? JsMethodControl
-        }
-        set {
-            if let newValue = newValue  {
-                objc_setAssociatedObject(self, &JsMethodControl.Key, newValue as JsMethodControl?, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            }
-        }
-    }
-    
-    private func jsControl(_ uController: WKUserContentController) -> JsMethodControl {
-        if self.js == nil {
-            self.js = JsMethodControl(uController);
-        }
-        return self.js!;
-    }
-    
-    func wkWebAddJsMethod(_ uController: WKUserContentController,_ name: String, _ block: JsMethodModel.JSBlock? ) {
-        jsControl(uController).addJs(name, handler: block)
-    }
-    
-    func wkWebRemoveAllJsHandle(_ uController: WKUserContentController) {
-        jsControl(uController).removeAllMethods()
-    }
-    
-}
-
-
-public class JsMethodControl : NSObject, WKScriptMessageHandler {
-    
-    public static var Key = "JsMethodControlKey";
-    
-    private var uController: WKUserContentController?
-    var sd: JsMethodModel?
-    
-    private lazy var methods: NSMutableArray = {
-        let m = NSMutableArray()
-        return m
-    }()
-    
-    init(_ uController: WKUserContentController) {
-        self.uController = uController
-    }
-    
-    func addJs(_ name: String, handler: JsMethodModel.JSBlock?) {
-        let m = JsMethodModel.init(name, handler)
-        self.methods.add(m)
-        self.uController?.add(self, name: name)
-    }
-    
-    func removeAllMethods() {
-        for  m in self.methods {
-            let model: JsMethodModel = m as! JsMethodModel
-            self.uController?.removeScriptMessageHandler(forName: model.methodName!)
-        }
-        self.methods.removeAllObjects()
-    }
-    
-    //代理方法
-    public func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        
-        let name: String? = message.name
-        if name == nil || name?.count == 0 {
-            return
-        }
-        
-        for  m in self.methods {
-            let model: JsMethodModel = m as! JsMethodModel
-            if model.methodName == name {
-                if model.methodBlock != nil {
-                    model.methodBlock!(message.body)
-                }
-                return
-            }
-        }
-        
-    }
-    
-}
-
-//Js调用原生模型
-public class JsMethodModel {
-    public typealias JSBlock = ((_ any: Any)->Void)
-    var methodName: String?
-    var methodBlock: JSBlock?
-    init(_ name: String?, _ block: JSBlock?) {
-        self.methodName = name
-        self.methodBlock = block
     }
 }
 
@@ -205,18 +116,21 @@ public class WebViewProgress: NSObject {
     
     private lazy var progressColorLayer: CAGradientLayer = {
         let layer: CAGradientLayer = CAGradientLayer()
-        layer.frame = makeRect(0, 0, phoneWidth*0.05, 4)
+        layer.frame = makeRect(0, 0, phoneWidth*0.05, 3)
         layer.startPoint = makePoint(0, 1)
         layer.endPoint = makePoint(1, 1)
         let c: UIColor = DF_WebViewLoadProgressColor
-        layer.colors = [c.cgColor, c.colorAlpha(0.1).cgColor]
+        layer.colors = [c.cgColor, c.colorAlpha(0.2).cgColor]
         return layer
     }()
     
-    func addProgressObserver(_ web: WKWebView, _ offsetY: CGFloat, _ block: ProgressBlock?) {
+    func addProgressObserver(_ web: WKWebView, _ offsetY: CGFloat, _ bgColor: UIColor?, _ block: ProgressBlock?) {
         self.pBlock = block
         web.addObserver(self, forKeyPath: WebViewProgress.ProgressKey, options: NSKeyValueObservingOptions.new, context: nil)
         web.layer.addSublayer(self.progressColorLayer)
+        if bgColor != nil {
+            self.progressColorLayer.colors = [bgColor!.cgColor, bgColor!.colorAlpha(0.2).cgColor]
+        }
         self.progressColorLayer.frame = self.progressColorLayer.frame.rectSetY(offsetY);
     }
     

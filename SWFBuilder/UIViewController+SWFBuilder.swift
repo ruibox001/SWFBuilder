@@ -16,7 +16,7 @@ let navigationLeftRightFontSize: CGFloat = DF_NavigationLeftRightFontSize
 let navigationdefaultColor = DF_NavigationLeftRightLabelColor
 
 
-public typealias mblock = ((_ v: UIView)->Void)?
+public typealias DViewClickblock = ((_ v: UIView)->Void)?
 
 public class NavTool: NSObject {
     
@@ -38,7 +38,7 @@ public class NavTool: NSObject {
         let block = self.blocks.value(forKey: getObjectKey(obj))
         if block != nil {
             let v: UIView = obj
-            let b:mblock = block as! mblock;
+            let b:DViewClickblock = block as! DViewClickblock;
             b!(v)
         }
     }
@@ -69,7 +69,7 @@ public class NavTool: NSObject {
         return button
     }
     
-    private func getItem(_ titleOrImage: AnyObject?,tag: NSInteger, left: Bool, tintColor: UIColor, clickBlock: mblock ) -> UIBarButtonItem {
+    private func getItem(_ titleOrImage: AnyObject?,tag: NSInteger, left: Bool, tintColor: UIColor, clickBlock: DViewClickblock ) -> UIBarButtonItem {
         let item: UIBarButtonItem = UIBarButtonItem()
         item.tintColor = tintColor
 
@@ -86,7 +86,7 @@ public class NavTool: NSObject {
         return item;
     }
     
-    private func setitems(_ array: NSArray, left: Bool, ctrl: UIViewController, tintColor: UIColor?, cilckBlock:mblock ) {
+    private func setitems(_ array: NSArray, left: Bool, ctrl: UIViewController, tintColor: UIColor?, cilckBlock:DViewClickblock ) {
         let mArray: NSMutableArray = NSMutableArray()
         for i in 0...(array.count-1){
             let any: AnyObject = array[i] as AnyObject
@@ -117,7 +117,7 @@ public class NavTool: NSObject {
         self.titleLabel.text = tit;
     }
     
-    public func addLeft(_ v: UIViewController, _ left: AnyObject?, tinColor color: UIColor?,_ block:mblock ){
+    public func addLeft(_ v: UIViewController, _ left: AnyObject?, tinColor color: UIColor?,_ block:DViewClickblock ){
         if left == nil {
             let image: UIImage? = UIImage(named:navigationBackImage);
             var tColor: UIColor? = color;
@@ -143,7 +143,7 @@ public class NavTool: NSObject {
         }
     }
     
-    public func addRight(_ v: UIViewController, _ right: AnyObject?, tinColor color: UIColor?,_ block:mblock){
+    public func addRight(_ v: UIViewController, _ right: AnyObject?, tinColor color: UIColor?,_ block:DViewClickblock){
         if right == nil {
             return;
         }
@@ -232,9 +232,9 @@ extension UIViewController
     }
     
     
-    public func addLeft(anyObject: AnyObject?, block:mblock ){
+    public func addLeft(anyObject: AnyObject?, block:DViewClickblock ){
         if block == nil {
-            let block:mblock = { [weak self] (v: UIView) in
+            let block:DViewClickblock = { [weak self] (v: UIView) in
                 self?.back()
             }
             getTool().addLeft(self, anyObject, tinColor: nil,block)
@@ -243,16 +243,16 @@ extension UIViewController
         getTool().addLeft(self, anyObject, tinColor: nil,block)
     }
 
-    public func addLeft(anyObject: AnyObject?, tintColor color: UIColor?,block:mblock ){
+    public func addLeft(anyObject: AnyObject?, tintColor color: UIColor?,block:DViewClickblock ){
         getTool().addLeft(self, anyObject, tinColor: color,block)
     }
 
 
-    public func addRight(anyObject: AnyObject?,block:mblock){
+    public func addRight(anyObject: AnyObject?,block:DViewClickblock){
         getTool().addRight(self, anyObject, tinColor: nil, block)
     }
 
-    public func addRight(anyObject: AnyObject?, tintColor color: UIColor?,block:mblock){
+    public func addRight(anyObject: AnyObject?, tintColor color: UIColor?,block:DViewClickblock){
         getTool().addRight(self, anyObject, tinColor: color, block)
     }
     

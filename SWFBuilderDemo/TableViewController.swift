@@ -45,14 +45,6 @@ public class TableViewController: UIViewController, UITableViewDelegate,UITableV
             self.datas.add(item)
         }
         
-        if #available(iOS 10.0, *) {
-            Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { (time: Timer) in
-                Dlog("time up -------------------------- ")
-            }
-        } else {
-            // Fallback on earlier versions
-        }
-        
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -73,4 +65,8 @@ public class TableViewController: UIViewController, UITableViewDelegate,UITableV
         return cell!
     }
 
+    deinit {
+        Dlog("SELF: \(self)")
+    }
+    
 }

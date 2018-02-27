@@ -75,7 +75,7 @@ public class AppBgOperation {
     var audioPlayer: AVAudioPlayer?
     
     func enableBgMode() {
-//        Dlog("启动后台模式")
+        Dlog("该App启动后台运行模式")
     }
     
     func stopBgMode() {
@@ -140,9 +140,8 @@ public class AppBgOperation {
             try audioPlayer = AVAudioPlayer.init(contentsOf: u)
             audioPlayer?.play()
         } catch _ {
-//            Dlog("后台模式播放异常了")
+            Dlog("后台模式播放异常了")
         }
-        
         
     }
     

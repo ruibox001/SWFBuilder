@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+public typealias DErrorBlock = ((_ error: Error)->Void)?
 
 let phoneWidth = UIScreen.main.bounds.size.width
 let phoneHeight = UIScreen.main.bounds.size.height

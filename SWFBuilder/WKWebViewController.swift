@@ -10,25 +10,44 @@ import Foundation
 import UIKit
 import WebKit
 
+public typealias DWKBlock = ((_ webView: WKWebView)->Void)?
+public typealias DWKJSBlock = ((_ userContentController: WKUserContentController)->Void)?
+
 public class WKWebViewController: UIViewController, WKNavigationDelegate,WKUIDelegate {
     
     var webView: WKWebView?
     var urlString: String?
+    
+    var webStartBlock: DWKBlock?
+    var webEndBlock: DWKBlock?
+    var webErrorBlock: DErrorBlock?
+    var webJsBlock: DWKJSBlock?
     
     private lazy var userController: WKUserContentController = {
         let u: WKUserContentController = WKUserContentController()
         return u
     }()
     
-    //Js调用原生注册手柄
-    public lazy var jsController: JsMethodControl = {
-        let jsController: JsMethodControl = JsMethodControl(self.userController)
-        return jsController
-    }()
-    
-    convenience init(_ url: String) {
+    convenience init(url: String) {
         self.init(nibName: nil, bundle: nil)
         self.urlString = url
+    }
+    
+    convenience init(url: String, startBlock: DWKBlock, endBlock: DWKBlock, errorBlock: DErrorBlock) {
+        self.init(nibName: nil, bundle: nil)
+        self.urlString = url
+        self.webStartBlock = startBlock
+        self.webEndBlock = endBlock
+        self.webErrorBlock = errorBlock
+    }
+    
+    convenience init(url: String, startBlock: DWKBlock, endBlock: DWKBlock, errorBlock: DErrorBlock, jsRegisterBlock: DWKJSBlock) {
+        self.init(nibName: nil, bundle: nil)
+        self.urlString = url
+        self.webStartBlock = startBlock
+        self.webEndBlock = endBlock
+        self.webErrorBlock = errorBlock
+        self.webJsBlock = jsRegisterBlock
     }
     
     public override func viewDidLoad() {
@@ -36,6 +55,9 @@ public class WKWebViewController: UIViewController, WKNavigationDelegate,WKUIDel
         
         self.addLeft(anyObject: nil, block: nil)
         
+        if (self.webJsBlock != nil){
+            self.webJsBlock!!(self.userController)
+        }
         let config: WKWebViewConfiguration = WKWebViewConfiguration()
         config.preferences.javaScriptEnabled = true
         config.preferences.javaScriptCanOpenWindowsAutomatically = true
@@ -64,19 +86,49 @@ public class WKWebViewController: UIViewController, WKNavigationDelegate,WKUIDel
     }
     
     public func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
+        Alert().setMsg(message).addAction(name: "OK", style: UIAlertActionStyle.default) { (alert: UIAlertAction) in
+            completionHandler()
+        }.show(self)
+    }
+    
+    public func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
+        Alert().setMsg(message).addAction(name: "OK", style: UIAlertActionStyle.default) { (alert: UIAlertAction) in
+            completionHandler(true)
+            }.addAction(name: "Cancel", style: UIAlertActionStyle.cancel) { (alert: UIAlertAction) in
+                completionHandler(false)
+            }.show(self)
+    }
+    
+    public func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
+        
+        let alert: UIAlertController = UIAlertController.init(title: prompt, message: nil, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addTextField { (textFiled: UITextField) in
+            textFiled.text = defaultText
+        }
+        alert.addAction(UIAlertAction.init(title: "Finish", style: UIAlertActionStyle.default, handler: { (action: UIAlertAction) in
+            completionHandler(alert.textFields![0].text)
+        }))
+        self.present(alert, animated: true, completion: nil)
         
     }
     
     public func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
-        Dlog("webView > start")
+        if (self.webStartBlock != nil){
+            self.webStartBlock!!(webView)
+        }
     }
     
     public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        Dlog("webView > finish")
+        if (self.webEndBlock != nil){
+            self.webEndBlock!!(webView)
+        }
     }
     
     public func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
         //当第一次启动App时会询问是否允许，这里是同意后刷新，防止出现空白界面
+        if (self.webErrorBlock != nil){
+            self.webErrorBlock!!(error)
+        }
         let err: NSError? = error as NSError
         if err?.code == -1009 {
             DoInMainAfter(2, { [weak self] in
