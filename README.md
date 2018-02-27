@@ -49,7 +49,7 @@ SWFBuilder快速编程组件特点详解
             Dlog("子线程并发: \(Thread.current)")
         }
         
-        DoInConcurrent {
+        DoInSerial {
             Dlog("子线程串行 \(Thread.current)")
         }
         
