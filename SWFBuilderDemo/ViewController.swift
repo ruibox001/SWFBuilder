@@ -158,16 +158,15 @@ class ViewController: UIViewController {
             let wkwebs = WKWebViewController.init(url: "https://www.baidu.com",
             startBlock: { (webView: WKWebView) in
                 Dlog("start block doing")
-            }, endBlock: { (webView: WKWebView) in
-                Dlog("end block doing")
-            }, errorBlock: { (error: Error) in
-                Dlog("error block doing")
+            }, endBlock: { (error: Error?) in
+                Dlog("error block doing: \(error)")
             },jsRegisterBlock: { (userContentController: WKUserContentController) in
                 Dlog("js register doing")
                 userContentController.userContentControllerAddJsMethod("alert", { (any: Any) in
                     Dlog("js block doing")
                 })
             })
+            
             self.navigationController?.pushViewController(wkwebs, animated: true)
         }
         else if sender.tag == 1 {

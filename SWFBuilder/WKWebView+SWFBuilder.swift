@@ -101,6 +101,17 @@ extension WKWebView
     func wkWebAddObserverTitleChange(_ block: WebViewProgress.ProgressBlock?) {
         getWebProgress().addTitleObserver(self, block)
     }
+    
+    func wkWebRemoveObserver() {
+        if self.wProgress != nil {
+            if(getWebProgress().pEnable) {
+                self.removeObserver(getWebProgress(), forKeyPath: WebViewProgress.ProgressKey)
+            }
+            if(getWebProgress().tEnable) {
+                self.removeObserver(getWebProgress(), forKeyPath: WebViewProgress.TitleKey)
+            }
+        }
+    }
 }
 
 //处理WKWebView的加载进度和监听title变化的类
@@ -113,6 +124,9 @@ public class WebViewProgress: NSObject {
     
     var pBlock: ProgressBlock?
     var tBlock: ProgressBlock?
+    var pEnable: Bool = false
+    var tEnable: Bool = false
+    
     
     private lazy var progressColorLayer: CAGradientLayer = {
         let layer: CAGradientLayer = CAGradientLayer()
@@ -126,6 +140,7 @@ public class WebViewProgress: NSObject {
     
     func addProgressObserver(_ web: WKWebView, _ offsetY: CGFloat, _ bgColor: UIColor?, _ block: ProgressBlock?) {
         self.pBlock = block
+        self.pEnable = true
         web.addObserver(self, forKeyPath: WebViewProgress.ProgressKey, options: NSKeyValueObservingOptions.new, context: nil)
         web.layer.addSublayer(self.progressColorLayer)
         if bgColor != nil {
@@ -141,6 +156,7 @@ public class WebViewProgress: NSObject {
     
     func addTitleObserver(_ web: WKWebView, _ block: ProgressBlock?) {
         self.tBlock = block
+        self.tEnable = true
         web.addObserver(self, forKeyPath: WebViewProgress.TitleKey, options: NSKeyValueObservingOptions.new, context: nil)
     }
     
@@ -169,6 +185,7 @@ public class WebViewProgress: NSObject {
                 self.tBlock!(keyPath,any)
             }
         }
+        
     }
     
 }

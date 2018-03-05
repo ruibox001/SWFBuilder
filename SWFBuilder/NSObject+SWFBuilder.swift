@@ -40,5 +40,27 @@ extension NSObject
         return nil
     }
     
+    func encodeRuntime(encoder: NSCoder) {
+        
+        var count: UInt32 = 0;
+        let ivars = class_copyIvarList(self.classForCoder, &count)
+        
+        for i in 0...(count-1) {
+            // 取出i位置对应的成员变量
+            let ivar = ivars![Int(i)];
+            // 查看成员变量
+            let name:String = ivar_getName(ivar) as! String;
+            // 归档
+            let value = self.value(forKey: name)
+            encoder.setValue(value, forKey: name)
+        }
+        free(ivars);
+    
+    }
+    
+    func initCoderRuntime() {
+        
+    }
+    
 }
 
